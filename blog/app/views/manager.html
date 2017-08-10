@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>编辑</title>
+    <script src="//unpkg.com/wangeditor/release/wangEditor.min.js"></script>
+    <script src="<?php echo JS_PATH?>jquery.min.js"></script>
+    <style>
+        #editor{
+            width:1000px;
+            margin:10px auto;
+        }
+        #publish{
+            margin-left:180px;
+            padding:3px;
+            margin-right:10px;
+        }
+        .btn.btn-success{
+            font-size:16px;
+            font-weight:600;
+            color: #160bdd;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<input type="hidden" value="<?php echo $a['id']?>">
+<div id="editor">
+    <p><?php echo $a['content']?></p>
+    <img src="../<?php echo $a['pic']?>" alt="">
+</div>
+<button id="publish" class="btn btn-success">发布</button>
+<a href="/blog/index.php/home/single?id=<?php echo $a['id']?>" class="btn btn-success">查看文章</a>
+
+<script>
+    $(function () {
+        var E = window.wangEditor;
+        var editor = new E('#editor');
+        editor.customConfig.uploadImgServer = '/blog/index.php/manager/upload';
+        editor.customConfig.showLinkImg = false;
+        editor.customConfig.uploadImgHooks = {
+            customInsert: function (insertImg, result, editor) {
+                var url = result.url;
+                insertImg(url);
+            }
+        };
+        editor.customConfig.uploadFileName = 'file';
+        editor.create();
+
+
+        $('#publish').on('click', function () {
+            $.ajax({
+                url: '/blog/index.php/manager/update',
+                data: {content: editor.txt.html(), id: $('input:hidden').val()},
+                success: function () {
+                    alert('更新成功');
+                }
+            });
+        });
+    })
+</script>
+</body>
+</html>

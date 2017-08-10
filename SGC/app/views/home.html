@@ -1,0 +1,10 @@
+<?php include VIEW_PATH.'header.html'?>
+<div class="list-group container" style="padding-right: 0;">
+    <?php foreach ($data as $v): ?>
+    <a href="/SGC/index.php/home/show?id=<?php echo $v['id'];?>" class="list-group-item " style="border: none;border-bottom: 1px solid #ccc;margin-bottom: 0;height: 50px;border-radius: 0;">
+        <?php echo $v['title'];?>
+    </a>
+    <?php endforeach;?>
+</div>
+</body>
+</html>

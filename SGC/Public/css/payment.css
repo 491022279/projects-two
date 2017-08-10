@@ -1,0 +1,140 @@
+.box{
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 99999999999999999999999;
+}
+.box .pay{
+    width:86%;
+    height:5rem;
+    background: url("../img/1464565-3.png")no-repeat center center/cover;
+    position: absolute;
+    top:-0.8rem;
+    left:0;
+    right:0;
+    bottom:0;
+    margin: auto;
+}
+.box .pay .close{
+    position: absolute;
+    right:0;
+    top:1.6rem;
+    width:0.6rem;
+    height:0.6rem;
+}
+.box .pay .title{
+    width:100%;
+    height:auto;
+    margin: 0 auto;
+}
+.box .pay .title p:nth-child(1){
+    color:#6D6D6D;
+    font-size: 0.3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.box .pay .title p:nth-child(2){
+    color:#A9A9A9;
+    font-size: 0.2rem;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.box .pay .title .dian{
+    width:0.5rem;
+    height:0.1rem;
+    margin: 0.1rem  auto;
+}
+.box .pay .title .dian i{
+    display: block;
+    float: left;
+    width: 0.1rem;
+    height:0.1rem;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+}
+.box .pay .title .dian i:last-child{
+    margin-right: 0;
+}
+.box .pay .title .dian i:nth-child(1){
+    background: #30AFFF;
+}
+.box .pay .title .dian i:nth-child(2){
+    background: #5BD92F;
+}
+.box .pay .title .dian i:nth-child(3){
+    background: #FFE42D;
+}
+.box .pay .bot{
+    width:4.1rem;
+    height:1.1rem;
+    background: #2F3236;
+    border-radius: 30px;
+    position: absolute;
+    bottom:-0.5rem;
+    left:1.2rem;
+}
+.box .pay .bot div{
+    width:50%;
+    height:100%;
+    float: left;
+    padding: 0.3rem;
+}
+.box .pay .bot div p{
+    font-size: 0.22rem;
+    color:#A0A0A0;
+    text-align: center;
+    line-height:0.3rem;
+}
+.box .pay .bot div:nth-child(1){
+    border-right:1px dashed #ccc;
+}
+.box .pay .bot div.active p{
+    color:#fff;
+}
+.box.active{
+    display: block;
+}
+.password label{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#key{
+    opacity: 0;
+    position: absolute;
+    top:0;
+    left:0;
+    padding: 0 0.2rem;
+}
+#wrap-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+#wrap-box div{
+    width: .65rem;
+    height: .65rem;
+    color: #000;
+    font-weight: 600;
+    font-size: 1rem;
+    text-align: center;
+    line-height: .65rem;
+    margin-right: 0.45rem;
+}
+#wrap-box div:first-child{
+    margin-left: 0.5rem;
+}
+#wrap-box div:last-child{
+    margin-right: 0;
+}
+#linebox .active{
+    background: #D11B27;
+}

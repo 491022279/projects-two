@@ -1,0 +1,395 @@
+/*头部*/
+header {
+    height: 0.88rem;
+    width: 100%;
+    /*background: red;*/
+    background: url("../img/headerb.png") center center;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+    position: fixed;
+    z-index: 10;
+    left:0;
+    top:0;
+}
+
+header .top {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+header .mid {
+    width: 60%;
+    height: 100%;
+}
+
+header .mid span {
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+
+header .mid p {
+    font-size: 0.14rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+header .right {
+    background-size: 100%;
+}
+
+header .left {
+    background: url("../img/001.png") center center no-repeat;
+    background-size: 100%;
+}
+
+header .dow {
+    height: 0.05rem;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    background: url("../img/wenzixia.png") center center no-repeat;
+}
+
+/*introduce*/
+.introduce {
+    height: 1.6rem;
+    width: 100%;
+    padding: 0.4rem 2rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+
+}
+.introduce_tow{
+    height: 1.6rem;
+    width: 7rem;
+    padding: 0.4rem 2rem;
+    margin: 0 0.25rem;
+    background: white;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.introduce .introduce_name {
+    width: 2.35rem;
+    height: 0.25rem;
+    background: url("../img/nutrition_name.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.introduce .introduce_eng {
+    width: 4rem;
+    height: 0.25rem;
+    background: url("../img/nutrition_eng.png") center center no-repeat;
+    background-size: 100%;
+
+}
+.introduce_matter{
+    width:100%;
+    height:7.4rem;
+    padding:0 0.25rem;
+    background: #F1F0F0;
+    display: flex;
+    justify-content: space-between;
+}
+.visiting_card{
+    width:48%;
+    height:97%;
+    position: relative;
+    margin:0.1rem 0;
+    background: white;
+}
+.visiting_card .visiting_card_shape{
+    width:100%;
+    height:1.7rem;
+    position: relative;
+}
+.visiting_card .visiting_card_shape .visiting_card_kuang{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding:0 1.2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.3rem;
+
+}
+.visiting_card .visiting_card_shape .zi{
+    font-size: 0.25rem;
+    color: white;
+    font-weight: 600;
+}
+.visiting_card .visiting_card_shape .tu{
+    height:0.25rem;
+    width:1.25rem;
+    display: flex;
+    justify-content: center;
+
+}
+.visiting_card .visiting_card_shape .tu span{
+    width:0.25rem;
+    height:0.25rem;
+    font-size: 0.25rem;
+    display: block;
+}
+.visiting_card .red{
+    background: url("../img/visiting_card_b1.png") center center no-repeat;
+    background-size: 100%;
+}
+.visiting_card .yellow{
+    background: url("../img/visiting_card_b2.png") center center no-repeat;
+    background-size: 100%;
+}
+.visiting_card .visiting_card_photo{
+    height:0.66rem;
+    width:0.66rem;
+    position: absolute;
+    top:0.1rem;
+    left:1.35rem;
+}
+.visiting_card .firuit{
+    width:2.8rem;
+    height:3.35rem;
+    position: absolute;
+    top:1.3rem;
+    left:0.3rem;
+}
+.introduce .introduce_one{
+    width: 2rem;
+    height: 0.25rem;
+    background: url("../img/introduce_one.png") center center no-repeat;
+    background-size: 100%;
+}
+.introduce .introduce_tow {
+    width: 4rem;
+    height: 0.25rem;
+    background: url("../img/introduce_tow.png") center center no-repeat;
+    background-size: 100%;
+}
+.dietitian_card {
+    width:100%;
+    height:2.2rem;
+    position: absolute;
+    bottom:0.05rem;
+    left:0;
+}
+.dietitian_card ul{
+    width:100%;
+    height:100%;
+    padding: 0 0.1rem;
+
+}
+.dietitian_card>ul>li{
+    height:50%;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom:0.1rem;
+
+}
+.dietitian_card>ul>li>.iconxian{
+    width:100%;
+    height:0.1rem;
+    background: url("../img/iconxian.png") center center no-repeat;
+    background-size: 100%;
+}
+.dietitian_card>ul>li>span{
+    font-size: 0.25rem;
+    font-weight: 600;
+
+}
+.dietitian_card>ul>li>p{
+    font-size: 0.15rem;
+}
+.dietitian_card>ul>li>.nur_star{
+    height:0.2rem;
+    width:0.2rem;
+}
+.dietitian_card ul .nur_tow{
+    padding-right: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dietitian_card ul .nur_tow .nur_smile{
+    width:3rem;
+    height:50%;
+}
+.dietitian_card ul .nur_tow .nur_smile p{
+    float: left;
+    width:1rem;
+    height:0.25rem;
+    font-size: 0.25rem;
+}
+.dietitian_card ul .nur_tow .nur_smile .pre{
+    border-right:1px solid #000;
+    margin-right: 0.2rem;
+}
+.dietitian_card ul .nur_tow .nur_smile p span{
+    display: block;
+    width:0.25rem;
+    height:0.25rem;
+    background: url("../img/xiaolian.png")center center no-repeat;
+    background-size: 100%;
+    float: left;
+    margin-right: 0.1rem;
+}
+
+/**/
+.cate{
+    height:100%;
+    width:100%;
+    background: #F1F1F1;
+    padding:0 0.25rem;
+}
+/**/
+ .ul{
+    width:100%;
+    height:100%;
+    margin-top: 0.2rem;
+}
+ .ul .li{
+    width:100%;
+    height:3rem;
+    background-image: url("../img/feryhgfj.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+}
+ ul li .top{
+    width:100%;
+    height:2.3rem;
+    padding: .2rem;
+}
+ ul li .top .left{
+    width:48%;
+    height:2rem;
+    float: left;
+    background: url("../img/632152_03.png")no-repeat center center/cover;
+}
+ ul li .top .left a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+ ul li .top .right{
+    float: right;
+    width:48%;
+    height:2rem;
+}
+ ul li .top .right ul{
+    width:100%;
+    height:100%;
+}
+ ul li .top .right ul li{
+    width:100%;
+    height:50%;
+}
+ ul li .top .right ul li:nth-child(2){
+    padding-top: .3rem;
+}
+ ul li .top .right ul li:nth-child(1) p:nth-child(1){
+    font-size: 0.22rem;
+    color:#3F4247;
+    font-weight: 800;
+}
+ ul li .top .right ul li:nth-child(1) p:nth-child(1) span{
+    font-weight: 400;
+}
+ ul li .top .right ul li:nth-child(1) p:nth-child(2){
+    display: block;
+    width:60%;
+    height:1px;
+    border-bottom: 1px dashed #D2D2D2;
+    margin-top: 0.08rem;
+}
+ ul li .top .right ul li:nth-child(1) p:nth-child(3){
+    color:#5C5C5C;
+    font-size:0.2rem;
+    
+    line-height: 0.4rem;
+}
+ ul li .top .right ul li:nth-child(2) .preve{
+    width:2.1rem;
+    height:0.7rem;
+    background:#E71D2A;
+    border-radius: 15px;
+}
+ ul li .top .right ul li:nth-child(2) .preve .left{
+    width:0.7rem;
+    height:0.7rem;
+    background: url("../img/kaobai123.png")no-repeat center center/cover;
+    float: left;
+}
+ ul li .top .right ul li:nth-child(2) .preve .right{
+    width:40%;
+    height:0.7rem;
+    float: left;
+     margin-left: 0.2rem;
+}
+ ul li .top .right ul li:nth-child(2) .preve .right p{
+    font-size: 0.1rem;
+    color:#fff;
+    width:1rem;
+    float: left;
+}
+ ul li .top .right ul li:nth-child(2) .preve .right h3{
+    font-size: 0.22rem;
+    color:#fff;
+}
+ ul li  .Division{
+    width:90%;
+    height: 1px;
+    border-bottom: 1px dashed #D4D4D4;
+    margin: 0 auto;
+}
+.ul .li .bot{
+    width:100%;
+    height:0.5rem;
+}
+.ul .li .bot ul{
+    width:100%;
+    height:100%;
+    padding: 0.1rem;
+    padding-top: 0.03rem;
+    padding-bottom: 0.15rem;
+}
+.ul .li .bot ul li {
+    width:33.334%;
+    height:100%;
+    float: left;
+    border-right:1px solid #D1D1D1;
+    padding-left: 0.15rem;
+}
+.ul .li .bot ul li:last-child{
+    border: none;
+}
+.ul .li .bot ul li p{
+    font-size: 0.1rem;
+    color:#9A9898;
+    text-align: center;
+    float: left;
+    margin-left: 0.1rem;
+}
+.ul .li .bot ul li img{
+    height:100%;
+    float: left;
+}
+
+.scrolls{
+    position: absolute;
+    top:0.88rem;
+    left:0;
+    width:100%;
+}

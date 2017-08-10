@@ -1,0 +1,200 @@
+<?php include VIEW_PATH.'headercommon.html';?>
+<header>
+    <div class="order">
+        <p class="orders">订单</p>
+        <p class="ordere">DING &nbsp;DAN</p>
+        <p class="decorate"><span class="line"></span><span class="point"></span><span class="line"></span></p>
+    </div>
+</header>
+
+<input type="hidden" value="<?php echo $id?>" id="hidden">
+
+<div class="order-wraper">
+        <div class="head-aside">
+            <div class="all  payitem" id="all">已支付</div>
+            <div class="waitpay active payitem" id="waitpaybox">待支付</div>
+        </div>
+
+        <div class="content-wraper active paybox" id="waitpay">
+            <!--从本地存储读取数据-->
+            <div class="content">
+                <div class="left">
+                    <div class="portrait"><img src="/SGC/Public/img/order_05.png" alt=""></div>
+                    <div class="linear"></div>
+                    <div class="starbox">
+                        <div class="star"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="title">
+                            <div class="lefts">
+                                果多美-直营店&nbsp;&nbsp;&gt;</div>
+                            <div class="rights">
+                                待支付
+                            </div>
+                        </div>
+                        <p>GUODUOMEIZHIYINGDIAN</p>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="mid">
+                        <p>新鲜美味草莓
+                            <span>
+                            500g/盒
+                        </span>
+                        </p>
+                        <div class="blocks">￥50:00</div>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="bot">
+                        <div class="leftss">
+                            <div class="time">
+                                <div class="point"></div>
+                                <p>2017-6-11 11:07</p>
+                            </div>
+                            <div class="pos">
+                                <div class="point"></div>
+                                <p>Shanxi
+                                    <span>Taiyuan</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rightss">
+                            <div class="return">取消订单</div>
+                            <div class="pay "><a class="active" href="/SGC/index.php/order/orderinfo">付款</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submit">
+                <a href="/SGC/index.php/order/orderinfo">
+                    <p>全部支付</p>
+                    <div class="pointL"></div>
+                    <div class="pointR"></div>
+                </a>
+
+            </div>
+
+            <div class="sitg"></div>
+        </div>
+
+        <div class="content-wraper  paybox" id="payed">
+            <!--从本地存储读取数据-->
+            <div class="content">
+                <div class="left">
+                    <div class="portrait"><img src="/SGC/Public/img/order_05.png" alt=""></div>
+                    <div class="linear"></div>
+                    <div class="starbox">
+                        <div class="star"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top">
+                        <div class="title">
+                            <div class="lefts">
+                                果多美-直营店&nbsp;&nbsp;&gt;</div>
+                            <div class="rights">
+                                订单已完成
+                            </div>
+                        </div>
+                        <p>GUODUOMEIZHIYINGDIAN</p>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="mid">
+                        <p>
+                        <span>
+                            新鲜美味草莓500g/盒等两件商品
+                        </span>
+                        </p>
+                        <div class="blocks">￥50:00</div>
+                        <div class="dash"></div>
+                    </div>
+                    <div class="bot">
+                        <div class="leftss">
+                            <div class="time">
+                                <div class="point"></div>
+                                <p>2017-6-11 11:07</p>
+                            </div>
+                            <div class="pos">
+                                <div class="point"></div>
+                                <p>Shanxi
+                                    <span>Taiyuan</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="rightss">
+                            <div class="return">再来一单</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="like">
+                <div class="favheader">
+                    <div class="logo"></div>
+                    <div class="title">
+                        <p class="guess">猜你喜欢</p>
+                        <p>CAINI <span>XIHUAN</span></p>
+                    </div>
+                </div>
+                <div class="favcontent">
+                    <div class="favitem">
+                        <div class="pic">
+                            <img src="/SGC/Public/img/orderall_07.png" alt="">
+                        </div>
+                        <div class="state">
+                            <p>果多美-直营店</p>
+                            <span class="hot">选自热销推荐</span>
+                        </div>
+                        <div class="info">
+                            <div class="sale">月售<span class="count">230</span></div>
+                        </div>
+                    </div>
+                    <div class="favitem">
+                        <div class="pic">
+                            <img src="/SGC/Public/img/orderall_09.png" alt="">
+                        </div>
+                        <div class="state">
+                            <p>果多美-直营店</p>
+                            <span class="hot">选自热销推荐</span>
+                        </div>
+                        <div class="info">
+                            <div class="sale">月售<span class="count">230</span></div>
+                        </div>
+                    </div>
+                    <div class="favitem">
+                        <div class="pic">
+                            <img src="/SGC/Public/img/orderall_12.png" alt="">
+                        </div>
+                        <div class="state">
+                            <p>果多美-直营店</p>
+                            <span class="hot">选自热销推荐</span>
+                        </div>
+                        <div class="info">
+                            <div class="sale">月售<span class="count">230</span></div>
+                        </div>
+                    </div>
+                    <div class="favitem">
+                        <div class="pic">
+                            <img src="/SGC/Public/img/orderall_12.png" alt="">
+                        </div>
+                        <div class="state">
+                            <p>果多美-直营店</p>
+                            <span class="hot">选自热销推荐</span>
+                        </div>
+                        <div class="info">
+                            <div class="sale">月售<span class="count">230</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sitg"></div>
+        </div>
+
+</div>
+
+<?php  include VIEW_PATH.'footer.html';?>
+</body>
+</html>
+<script src="<?php echo JS_PATH.'waitpay.js' ;?>"></script>
+<link rel="stylesheet" href="<?php echo CSS_PATH.'waitpay.css';?>">

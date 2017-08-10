@@ -1,0 +1,238 @@
+<?php include VIEW_PATH."admin_header.html"?>
+<script src="<?php echo JS_PATH . 'fruit_details.js'?>"></script>
+
+<style>
+    .addpic{
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        /*color: #555;*/
+        color: #A69B99;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .addpic label{
+        text-align: left;
+    }
+</style>
+<!--<body>-->
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#add" id="add_tab">增加分类</a></li>
+        <li role="presentation" class=""><a href="#list" id="list_tab">分类列表</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="add">
+            <div class="top">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">商店管理</div>
+                    <div class="panel-body">
+                        <form id='form' action="javascript:void(0)" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">名字</label>
+                                <input type="text" name='title' class="form-control" id="exampleInputEmail1"
+                                       placeholder="名字">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail3">英文</label>
+                                <input type="text" name='etitle' class="form-control" id="exampleInputEmail3"
+                                       placeholder="名字">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail2">价格</label>
+                                <input type="text" name='price' class="form-control" id="exampleInputEmail2"
+                                       placeholder="价格">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="exampleInputEmail4">斤数</label>
+                                <input type="text" name='jin' class="form-control" id="exampleInputEmail4"
+                                       placeholder="斤数">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail5">产地</label>
+                                <input type="text" name='place' class="form-control" id="exampleInputEmail5"
+                                       placeholder="产地">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputEmail6">运输时间</label>
+                                <input type="text" name='date' class="form-control" id="exampleInputEmail6"
+                                       placeholder="运输时间">
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片地址1</label>
+                                <div class="addpic" style="">
+                                    <label for="file1" style="padding-top: 1px;" id="label1">点击上传图片1</label>
+                                    <input type="file" style="display: none;" name="pic1" class="form-control" id="file1" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片地址2</label>
+                                <div class="addpic" style="">
+                                    <label for="file2" style="padding-top: 1px;" id="label2">点击上传图片2</label>
+                                    <input type="file" style="display: none;" name="pic2" class="form-control" id="file2" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片地址3</label>
+                                <div class="addpic" style="">
+                                    <label for="file3" style="padding-top: 1px;" id="label3">点击上传图片3</label>
+                                    <input type="file" style="display: none;" name="pic3" class="form-control" id="file3" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片地址4</label>
+                                <div class="addpic" style="">
+                                    <label for="file4" style="padding-top: 1px;" id="label4">点击上传图片4</label>
+                                    <input type="file" style="display: none;" name="pic4" class="form-control" id="file4" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片地址5</label>
+                                <div class="addpic" style="">
+                                    <label for="file5" style="padding-top: 1px;" id="label5">点击上传图片5</label>
+                                    <input type="file" style="display: none;" name="pic5" class="form-control" id="file5" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">文本1</label>
+                                <input type="text" name='word1' class="form-control" id="exampleInputPassword1"
+                                       placeholder="文本1">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword2">文本2</label>
+                                <input type="text" name='word2' class="form-control" id="exampleInputPassword2"
+                                       placeholder="文本2">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword3">文本3</label>
+                                <input type="text" name='word3' class="form-control" id="exampleInputPassword3"
+                                       placeholder="文本3">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword4">文本4</label>
+                                <input type="text" name='word4' class="form-control" id="exampleInputPassword4"
+                                       placeholder="文本4">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword5">文本5</label>
+                                <input type="text" name='word5' class="form-control" id="exampleInputPassword5"
+                                       placeholder="文本5">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword1">文本6</label>
+                                <input type="text" name='word6' class="form-control" id="exampleInputPassword6"
+                                       placeholder="文本6">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword7">文本7</label>
+                                <input type="text" name='word7' class="form-control" id="exampleInputPassword7"
+                                       placeholder="文本7">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword8">文本8</label>
+                                <input type="text" name='word8' class="form-control" id="exampleInputPassword8"
+                                       placeholder="文本8">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword9">文本9</label>
+                                <input type="text" name='word9' class="form-control" id="exampleInputPassword9"
+                                       placeholder="文本9">
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleInputPassword10">文本10</label>
+                                <input type="text" name='word10' class="form-control" id="exampleInputPassword10"
+                                       placeholder="文本10">
+                            </div>
+
+
+
+                            <!--<div class="form-group" style="display: block">-->
+                                <!--<div class="radio" style="margin:0">-->
+                                    <!--<label>-->
+                                        <!--<input type="radio" name='cid' id="optionsRadios1" value="0" checked>-->
+                                        <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios1" value="0" checked>&ndash;&gt;-->
+                                        <!--酒水-->
+                                    <!--</label>-->
+                                <!--</div>-->
+                                <!--<div class="radio" style="margin:0">-->
+                                    <!--<label>-->
+                                        <!--<input type="radio" name='cid' id="optionsRadios2" value="2">-->
+                                        <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios2" value="2">&ndash;&gt;-->
+                                        <!--零食-->
+                                    <!--</label>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-default">添加</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list">
+            <div class="content">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">数据信息</div>
+                    <div class="panel-body">
+                        <div class="bs-example" data-example-id="bordered-table">
+                            <table class="table table-bordered" style="text-align: center">
+                                <thead>
+                                <tr>
+                                    <th style="text-align: center">id</th>
+                                    <th style="text-align: center">名字</th>
+                                    <th style="text-align: center">英文</th>
+                                    <th style="text-align: center">价格</th>
+                                    <th style="text-align: center">斤数</th>
+                                    <th style="text-align: center">产地</th>
+                                    <th style="text-align: center">运输时间</th>
+                                    <th style="text-align: center">图片地址1</th>
+                                    <th style="text-align: center">图片地址2</th>
+                                    <th style="text-align: center">图片地址3</th>
+                                    <th style="text-align: center">图片地址4</th>
+                                    <th style="text-align: center">图片地址5</th>
+                                    <th style="text-align: center">文本1</th>
+                                    <th style="text-align: center">文本2</th>
+                                    <th style="text-align: center">文本3</th>
+                                    <th style="text-align: center">文本4</th>
+                                    <th style="text-align: center">文本5</th>
+                                    <th style="text-align: center">文本6</th>
+                                    <th style="text-align: center">文本7</th>
+                                    <th style="text-align: center">文本8</th>
+                                    <th style="text-align: center">文本9</th>
+                                    <th style="text-align: center">文本10</th>
+                                    <th style="text-align: center">
+                                        <nobr>删除</nobr>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

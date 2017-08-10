@@ -1,0 +1,34 @@
+.share_bg {
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/login_bg1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.share_bg .frame {
+    width: 4.73rem;
+    height: 4.23rem;
+    background-image: url("../img/network_frame.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.share_bg .frame .close {
+    width: 0.6rem;
+    height: 0.6rem;
+    position: absolute;
+    right: -0.1rem;
+    top: 0.85rem;
+}
+
+.share_bg .frame .close img {
+    width: 100%;
+    height: 100%;
+}

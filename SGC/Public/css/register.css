@@ -1,0 +1,306 @@
+main{
+    width:100%;
+    height:100%;
+    background:url(/SGC/Public/img/login_bg.png) no-repeat center center/cover;
+}
+
+header{
+    height: 0.88rem;
+    width:100%;
+    /*background: red;*/
+    /*background:url("../img/headerb.png") center center;*/
+    padding:0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+
+}
+header .top{
+    width: 0.6rem;
+    height:0.6rem;
+}
+header .top.left{
+    background:url(../img/001.png) no-repeat center center/contain;
+}
+header .mid{
+    width:60%;
+    height:100%;
+
+}
+header .mid span{
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+header .mid p{
+    font-size: 0.14rem;
+    font-weight:500;
+    color: white;
+    margin-top: 0.5rem;
+}
+header .right{
+    width:.98rem;
+    background: url("../img/login_login.png")center center no-repeat ;
+    background-size: 100%;
+}
+header .dow{
+    height:0.05rem;
+    width:30%;
+    margin: 0 auto;
+    margin-top:0.1rem;
+    /*background:url("../img/wenzixia.png") center center no-repeat;*/
+
+}
+
+main .floor{
+    width:100%;
+    height:9.04rem;
+    margin-top:.52rem;
+    background:url(/SGC/Public/img/login_floor.png) no-repeat center 0/contain;
+    position:relative;
+}
+.floor .photo{
+    width:1.78rem;
+    height:1.78rem;
+    background:url(/SGC/Public/img/login_photo.png) no-repeat center center/contain;
+    position:absolute;
+    top:6%;
+    left:50%;
+    transform:translateX(-45%);
+}
+.floor section{
+    width:5.7rem;
+    height:4.5rem;
+    position:absolute;
+    top:2.6rem;
+    left:50%;
+    transform:translateX(-50%);
+}
+section h3{
+    font-size:.22rem;
+    font-weight:600;
+    text-align:center;
+    line-height:1rem;
+    color:#CCCACA;
+}
+section ul{
+    width:100%;
+    height:3rem;
+    overflow: hidden;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-content: space-around;
+}
+section ul>li{
+    width:4.11rem;
+    height:.7rem;
+    background:#CF2B25;
+    border-radius: .5rem;
+    display:flex;
+    /*justify-content:flex-start;*/
+}
+section .tip{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section .tip1{
+    width:2.3rem;
+    height:.3rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0.03rem 0.03rem 0.1rem 0.01rem #ccc, -0rem -0.03rem 0.1rem 0.01rem #ccc;
+    /*background:url(../img/login_tip1.png) no-repeat center center/cover;*/
+    position:absolute;
+    right: .8rem;
+    top: .75rem;
+    z-index:5;
+    display: none;
+}
+.tip.active{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.tip i{
+    /*display: block;*/
+    width:.2rem;
+    height:.2rem;
+    background: url(../img/login_!.png) no-repeat center center/contain ;
+}
+.tip span{
+    /*display: block;*/
+    /*width:1.6rem;*/
+    font-size:.12rem;
+    color:#D3232D;
+}
+
+section .tip2{
+    width:2rem;
+    height:.3rem;
+    background:#fff;
+    border-radius: .5rem;
+    box-shadow: 0.03rem 0.03rem 0.1rem 0.01rem #ccc, -0rem -0.03rem 0.1rem 0.01rem #ccc;
+    /*background:url(../img/login_tip1.png) no-repeat center center/cover;*/
+    position:absolute;
+    right: .8rem;
+    top: 2.9rem;
+    z-index:5;
+    display: none;
+}
+section ul li .user{
+    width:.62rem;
+    height:.62rem;
+    margin: .03rem .1rem;
+    background:url(/SGC/Public/img/Icon_User.png) no-repeat center center/contain;
+}
+section ul li .password{
+    width:.62rem;
+    height:.62rem;
+    margin: .03rem .1rem;
+    float:left;
+    background:url(/SGC/Public/img/Icon_Lock1.png) no-repeat center center/contain;
+}
+section ul li .edit{
+    width:3.5rem;
+    height: .7rem;
+    box-shadow: 0.03rem 0.03rem 0.1rem 0.01rem #ccc, -0rem -0.03rem 0.1rem 0.01rem #ccc;
+    border:0;
+    border-radius: .08rem;
+    background:#fff;
+    position:relative;
+}
+.edit i{
+    display: block;
+    width:.24rem;
+    height:.24rem;
+    position:absolute;
+    right:.2rem;
+    top:50%;
+    transform: translateY(-50%);
+}
+.edit .errow{
+    background:url(../img/login_errow2.png) no-repeat center center/contain;
+    display: none;
+}
+.edit .right{
+    background:url(../img/login_right.png) no-repeat center center/contain;
+    display: none;
+}
+.edit .errow1.active{
+    display: block;
+}
+.edit .errow2.active{
+    display: block;
+}
+.edit .errow3.active{
+    display: block;
+}
+.right.active{
+    display: block;
+}
+.edit input{
+    border:none;
+   outline-color: rgba(207,53,42,.5);
+    font-size:.18rem;
+    font-weight:500;
+    color:#CCCACA;
+    width: 3.3rem;
+    height: .7rem;
+    position: absolute;
+    padding-left: .1rem;
+}
+.edit input.active{
+    color:#CF2B25;
+}
+section .agreement{
+    margin:.1rem auto;
+    margin-left:.86rem;
+    font-size:.18rem;
+    color:#cccaca;
+}
+section .eye{
+    width:.25rem;
+    height:.11rem;
+}
+section .eye1{
+    background:url(../img/eye1.png) no-repeat center center/contain;
+    position: absolute;
+    top: 2.5rem;
+    right: 0.3rem;
+}
+section .eye1.active{
+    background:url(../img/eye2.png) no-repeat center center/contain;
+}
+section .eye2.active{
+    background:url(../img/eye2.png) no-repeat center center/contain;
+}
+section .eye2{
+    background:url(../img/eye1.png) no-repeat center center/contain;
+    position: absolute;
+    top: 3.4rem;
+    right: 0.3rem;
+}
+.floor .btntop{
+    width:3.46rem;
+    height:1.19rem;
+    background:url(/SGC/Public/img/login_btntop.png) no-repeat center center/contain;
+    border:0;
+    position:absolute;
+    bottom:.65rem;
+    left:50%;
+    transform:translateX(-50%);
+    z-index:1;
+}
+.floor .button{
+    border:none;
+    width:4.5rem;
+    height:1.05rem;
+    outline:none;
+    background:url(/SGC/Public/img/login_btn.png) no-repeat center center/cover;
+    border:0;
+    position:absolute;
+    bottom:-.3rem;
+    left:50%;
+    transform:translateX(-50%);
+}
+.floor .button.active{
+    background:url(/SGC/Public/img/login_btn2.png) no-repeat center center/cover;
+}
+
+main>.login{
+    width:4.8rem;
+    height:.22rem;
+    margin:0 auto;
+    margin-top:.45rem;
+    background:url(../img/login_line.png) no-repeat center center/contain;
+    font-size:.22rem;
+    color:#fff;
+    text-align:center;
+    font-weight:600;
+}
+main .account{
+    width:3.6rem;
+    height:.73rem;
+    margin:0 auto;
+    margin-top:.34rem;
+    display:flex;
+    justify-content:space-around;
+}
+.account a{
+    display:block;
+    width:.73rem;
+    height:.73rem;
+}
+.account a:nth-of-type(1){
+    background:url(/SGC/Public/img/login_qq.png) no-repeat center center/contain;
+}
+.account a:nth-of-type(2){
+    background:url(/SGC/Public/img/login_weixin.png) no-repeat center center/contain;
+}
+.account a:nth-of-type(3){
+    background:url(/SGC/Public/img/login_blog.png) no-repeat center center/contain;
+}

@@ -1,0 +1,409 @@
+$url:'/SGC/Public/img/';
+html,body{
+  background: #F1F0F0;
+}
+header{
+  width: 100%;
+  height: 0.88rem;
+  background: #ED3541;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .order p{
+      color: #FFFFFF;
+    text-align: center;
+  }
+  .order .orders{
+    font-size: 0.30rem;
+    font-weight: 500;
+  }
+  .order .ordere{
+    font-size: 0.18rem;
+  }
+  .order .decorate{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .order .decorate .line{
+    width: 0.2rem;
+    border-bottom: 2px solid #FFFFFF;
+  }
+  .order .decorate .point {
+    display: block;
+    width: 4px;
+    height: 4px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    margin:0 0.1rem;
+  }
+}
+.order-wraper{
+  background: #F1F0F0;
+  width: 100%;
+  height: auto;
+  .head-aside{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0 0.25rem;
+    background-image: url($url + 'order_02.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: flex;
+  }
+  .head-aside div{
+    flex:1;
+    color: #CCC9CC;
+    font-size: 0.36rem;
+    text-align: center;
+    font-weight: 300;
+    line-height: 0.88rem;
+  }
+  .head-aside .active{
+    color: #FFFFFF;
+  }
+  .content-wraper{
+    width: 100%;
+    height: auto;
+    background: #F1F0F0;
+    display: none;
+  }
+  .active{
+    display: block;
+  }
+  .content{
+    width: 100%;
+    height: 3rem;
+    padding: 0 0.25rem;
+    display: flex;
+    background: #FFFFFF;
+    border-radius: 0.1rem;
+    margin-bottom: 0.2rem;
+    box-shadow: 0 2px 2px 2px #CBCBCB;
+    align-items: center;
+  }
+  .content>.left{
+    width: 1.3rem;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px dashed #CBCBCB;
+  }
+  .content>.left .portrait{
+    width: 1.03rem;
+    height: 1.03rem;
+    img{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .content>.left .linear{
+    width: 0.6rem;
+    height: 0.04rem;
+    background-image: url($url + 'order_03.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .content>.left .starbox{
+    width: 0.9rem;
+    height: 0.2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content>.left .starbox .star{
+    width: 0.2rem;
+    height: 0.2rem;
+    background-image: url($url + 'order_09.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+  .content>.right{
+    width: calc(100% - 1.3rem);
+    height: 100%;
+    padding-left: 0.2rem;
+    padding-top: 0.35rem;
+  }
+  .content>.right .top .title{
+    overflow: hidden;
+  }
+  .content>.right .top .title>.lefts{
+    width: 2.08rem;
+    font-size: 0.24rem;
+    color: #5E5E5E;
+    float: left;
+  }
+  .content>.right .top .title>.rights{
+
+    font-size: 0.24rem;
+    color: #ABABAB;
+    float: right;
+  }
+  .content>.right .top>p{
+    width: 100%;
+    font-size: 0.2rem;
+    color: #AFAFAF;
+    margin-bottom: 0.1rem;
+  }
+  .content>.right .top .dash{
+    width: 1.85rem;
+    border-bottom: 1px dashed #D5D4D4;
+    margin-bottom: 0.1rem;
+  }
+  .content>.right .mid>p{
+    width: 100%;
+    font-size: 0.24rem;
+    color: #5C5B5B;
+    font-weight: 500;
+  }
+  .content>.right .mid>p>span{
+     font-size: 0.24rem;
+     color: #ABABAB;
+   }
+  .content>.right .mid .blocks{
+    width: 100%;
+    font-size: 0.24rem;
+    color: #ABABAB;
+    margin-bottom: 0.1rem;
+  }
+  .content>.right .mid .dash{
+    width: 1.85rem;
+    border-bottom: 1px dashed #D5D4D4;
+    margin-bottom: 0.1rem;
+
+  }
+  .content>.right .bot{
+    display: flex;
+    width: 100%;
+  }
+  .content>.right .bot .leftss{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .content>.right .bot .leftss>div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .content>.right .bot .leftss .point{
+    width: 0.42rem;
+    height: 0.42rem;
+    background: #17B443;
+    border-radius: 50%;
+    border:1px solid #FFFFFF;
+    margin-right: 0.2rem;
+  }
+  .content>.right .bot .leftss .time .point{
+      background: #F91D47;
+  }
+  .content>.right .bot .leftss p{
+    font-size: 0.24rem;
+    color: #ABABAB;
+  }
+  .content>.right .bot .leftss p span{
+    color: #9E9E9E;
+    font-weight: 400;
+  }
+  .content>.right .bot .rightss {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  .content>.right .bot .rightss div:nth-child(1){
+      width: 1.4rem;
+      height: 0.4rem;
+      border-radius: 0.1rem;
+      border:1px solid #484747;
+      color: #767676;
+      font-size: 0.24rem;
+      text-align: center;
+      line-height: 0.4rem;
+      margin-bottom: 0.1rem;
+
+  }
+  .content>.right .bot .rightss .pay>a{
+    width: 1.4rem;
+    height: 0.4rem;
+    border-radius: 0.1rem;
+    border:1px solid #484747;
+    color: #767676;
+    font-size: 0.24rem;
+    text-align: center;
+    line-height: 0.4rem;
+    margin-bottom: 0.1rem;
+  }
+  .content>.right .bot .rightss .pay{
+      margin-left: 0.1rem;
+  }
+  .content>.right .bot .rightss .pay .active{
+      border:1px solid #FA4A6C;
+      color: #FA4A6C;
+  }
+  .submit{
+    width: 4.04rem;
+    height: 0.9rem;
+    border-radius: 0.9rem;
+    background: #FFCC00;
+    margin:0 auto;
+    margin-top:0.4rem;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 0.36rem;
+    font-weight:600;
+    a{
+      color: #FFFFFF;
+    }
+    & div{
+      position: absolute;
+      top:0;
+      bottom:0;
+      margin:auto;
+      width: 0.1rem;
+      height: 0.1rem;
+      border-radius: 50%;
+      background: #FFFFFF;
+    }
+    & .pointL{
+      left: 0.2rem;
+    }
+    & .pointR{
+      right: 0.2rem;
+    }
+    & p{
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: 0.9rem;
+    }
+  }
+  .like{
+    width: 100%;
+    height: auto;
+    margin: .2rem 0.25rem;
+    .favheader{
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      margin: 0.4rem auto;
+    }
+    .favheader .logo{
+      width: 0.57rem;
+      height: 0.57rem;
+      background-image: url($url + 'orderall_03.png');
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      margin-right: 0.2rem;
+    }
+    .favheader .title{
+      font-size: 0.36rem;
+      & .guess{
+        color: #5F5E5E;
+        font-weight: 600;
+      }
+      & p{
+        color: #858585;
+        font-weight: 600;
+      }
+      & p span{
+        font-weight: 400;
+      }
+    }
+    .favcontent {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items:center;
+      justify-content: flex-start;
+      overflow:scroll;
+    }
+    .favcontent>div{
+      flex:none;
+      width: 2rem;
+      height: 3.3rem;
+      border-radius: 0.2rem;
+      margin-right: 0.1rem;
+      background: #FFFFFF;
+      border-bottom: 3px solid #019669;
+    }
+    .favcontent .favitem .pic{
+      width: 2rem;
+      height: 2rem;
+      padding: 0.1rem;
+      & img{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .state p{
+        padding-left: .1rem;
+        font-size: 0.24rem;
+        font-weight: 600;
+        color: #363636;
+      }
+    .state .hot{
+        display: block;
+        padding-left: .1rem;
+        font-size: 0.16rem;
+        color: #767676;
+        padding-bottom: 0.1rem;
+        width: 100%;
+        border-bottom: 1px solid #C2C2C2;
+      }
+    }
+    .favitem .info{
+        font-size: 0.2rem;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      padding: 0 0.1rem;
+      line-height: 100%;
+      & div{
+        flex: 1;
+      }
+    }
+  .sitg{
+    width: 100%;
+    height: 1.4rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  html {
+    font-size: 42.66667px; }
+  .order-wraper .content>.right .bot .leftss{
+    display: none;
+  }
+  .order-wraper .content>.right .bot .rightss{
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  html {
+    font-size: 48px; }
+  .order-wraper .content>.right .bot .leftss{
+    display: none;
+  }
+  .order-wraper .content>.right .bot .rightss{
+    justify-content: flex-start;
+  }
+}

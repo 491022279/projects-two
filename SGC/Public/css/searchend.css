@@ -1,0 +1,364 @@
+header{
+    height: 0.88rem;
+    width:100%;
+    /*background: red;*/
+    background:url("../img/headerb.png") center center;
+    padding:0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+}
+header .top{
+    width: 0.6rem;
+    height:0.6rem;
+}
+header .mid{
+    width:60%;
+    height:100%;
+}
+header .mid span{
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+header .mid p{
+    font-size: 0.14rem;
+    font-weight:500;
+    color: white;
+    margin-top: 0.5rem;
+}
+header .left{
+    background: url("../img/001.png")center center no-repeat ;
+    background-size: 100%;
+}
+header .dow{
+    height:0.05rem;
+    width:30%;
+    margin: 0 auto;
+    margin-top:0.1rem;
+    background:url("../img/wenzixia.png") center center no-repeat;
+}
+.neikuan{
+    width: 7rem;
+    margin: 0 auto;
+}
+.searchbox{
+    width:100%;
+    position:relative;
+    z-index:10;
+    margin-top: 0.2rem;
+}
+#search{
+    width:100%;
+    height:0.88rem;
+    padding-left:0.5rem;
+    font-size:0.24rem;
+    line-height:0.88rem;
+    border-radius:.5rem;
+    display: block;
+    border: 0.04rem solid #ffff00;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+input,button{
+    border:none;
+    outline:none;
+}
+button{
+    width:1rem;
+    height:0.68rem;
+    border-radius:.5rem;
+    position:absolute;
+    top:0;
+    bottom:0;
+    right:.4rem;
+    margin:auto;
+    background:#ffe200;
+}
+.searchbox button img{
+    width:0.38rem;
+    height:0.38rem;
+}
+.hot-search{
+    margin:.5rem auto 0;
+    letter-spacing:.01rem;
+    text-transform: uppercase;
+}
+.hot-search-title{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+.fruit-one{
+    width:.7rem;
+    height:.44rem;
+}
+.title-right>li{
+    width:6.18rem;
+    display: flex;
+    justify-content:space-between;
+}
+.title-right{
+   margin-left: 0.1rem;
+}
+.title-right>li>p{
+    font-size:0.3rem;
+    color:#454545;
+}
+.title-right>li>p:nth-child(2){
+    font-size: 0.28rem;
+    color:#aeacac;
+}
+.title-right>li>p:nth-child(2) strong{
+    color: #d31d29;
+}
+.title-right>li:nth-child(3){
+    width:100%;
+    height:.05rem;
+}
+.bast-search{
+    padding-top: 0.2rem;
+}
+.bast-search-title .bast-title-chinese{
+    font-size: 0.2rem;
+    color: #cf1a26;
+    display: block;
+    float: left;
+}
+.bast-search-title .bast-title-english{
+    font-size: 0.2rem;
+    color: #dbd3fe;
+    text-transform:uppercase;
+    font-family: "San Francisco Display";
+    letter-spacing:0.01rem;
+    display: block;
+    float: left;
+    margin-left: 0.15rem;
+}
+.bast-content-img div{
+    position: absolute;
+    right:0;
+    margin:auto;
+    left:0;
+    border-radius: 0.08rem;
+    background-size:cover;
+    background-position:center;
+    height:2.54rem;
+}
+.bast-search .bast-content{
+    padding: 0.2rem;
+    margin-top: 0.2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    float: left;
+    border-radius: 0.2rem;
+    box-sizing: border-box;
+}
+.bast-search .bast-content .title-right>li{
+    width:5.9rem;
+    display: flex;
+    justify-content:space-between;
+}
+.fruit-one1{
+    width:.62rem;
+    height:.62rem;
+}
+.bast-search .title-right>li:nth-child(2) span{
+    display: block;
+    float: right;
+}
+.bast-search .title-right>li:nth-child(1)>p:nth-child(1){
+    color: #d01a26;
+}
+.bast-content-img{
+    width:6.55rem;
+    height:3.5rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 0.2rem;
+}
+.bast-content-img>a{
+    width:6.55rem;
+    height:2.54rem;
+    display: block;
+}
+.bast-content-img p{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    font-size:0.24rem;
+}
+.bast-content-img p a{
+    color: #525151;
+}
+.bast-content-share{
+    margin: 0.2rem -0.2rem;
+    padding: .2rem;
+    border-top: 0.01rem solid #b0afaf;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+}
+.bast-content-share-b{
+    width: 33.33%;
+    border-left: 1px solid #b0afaf;
+    display: flex;
+    align-content: center;
+    justify-content:center;
+}
+.bast-content-share-b:first-child{
+    border-left: 0;
+}
+.bast-content-share-b img{
+    width: 0.64rem;
+    height:0.64rem;
+    vertical-align:middle;
+}
+.bast-content-share-b:nth-child(2){
+    display: flex;
+    align-content: center;
+    padding-left: 0.35rem;
+}
+.bast-content-share-b:nth-child(2) div{
+    width:0.65rem;height:0.65rem;
+    margin-left:-0.35rem;
+    background-position:center;
+    background-size:cover;
+    color: #fff;
+    font-size: 0.22rem;
+    line-height:0.65rem;
+    text-align: center;
+}
+.bast-content-share-b:nth-child(1) img{
+    margin-left: -0.1rem;
+}
+.bast-content-share-b:nth-child(2) img{
+    margin-left: -0.35rem;
+}
+.bast-content-share-v h2{
+    font-size: 0.24rem;
+    color: #b0afaf;
+}
+.bast-content-share-v span{
+    font-size: 0.18rem;
+    color: #b0afaf;
+    display: block;
+}
+.bast-search-title{
+    float: left;
+}
+.other-search .bast-search-title{
+    width: 100%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.1rem;
+}
+.other-content{
+    float: left;
+    display: block;
+    width:100%;
+}
+.other-content-box{
+    position: relative;
+    height: 1.88rem;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.15rem rgba(0,0,0,.3);
+}
+.hot{
+    background-size: cover;
+    position: absolute;
+    width: 0.76rem;
+    height: 0.82rem;
+    height: 0.82rem;
+    line-height:0.6rem;
+    right: 0.2rem;
+    top:-0.1rem;
+    font-size: 0.24rem;
+    color: #fff;
+    text-align: center;
+}
+
+.other-content-img{
+    width:1.4rem;
+    height:1.88rem;
+    float: left;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.other-content-img a{
+    display: block;
+    width:1.4rem;
+    height:1.88rem;
+}
+.other-content-img img{
+    height:100%;
+    vertical-align: middle;
+    transform: translateX(-0.9rem);
+}
+.other-content-box:first-child .other-content-img img{
+    transform: translateX(0);
+}
+.other-content-con{
+    width: 3.6rem;
+    float: left;
+    margin-left: 0.3rem;
+    margin-top: 0.1rem;
+}
+.other-content-title h2,.other-content-title h3{
+    font-size: 0.26rem;
+    color: #595856;
+}
+.other-content-title{
+    padding-bottom: 0.05rem;
+    border-bottom: 0.01rem dashed #a1a1a1;
+}
+.other-content-title h2 a{
+    font-size: 0.26rem;
+    color: #595856;
+}
+.other-content-title h3 a{
+    font-size: 0.24rem;
+    color: #a1a1a1;
+}
+.other-content-con p{
+    height:.5rem;
+    -webkit-line-clamp: 2;!important;
+    font-size: 0.24rem;
+    color: #525151;
+    margin-top: 0.1rem;
+}
+.other-content-con p a{
+    font-size: 0.24rem;
+    color: #525151;
+}
+.other-content-share{
+    margin-top: 0.15rem;
+    width: 3.6rem;
+    height: 0.26rem;
+    line-height: 0.26rem;
+    display: flex;
+    justify-content: space-between;
+}
+.other-share{
+    width: 0.78rem;
+    height:0.26rem;
+}
+.other-share-img{
+    width: 0.26rem;
+    height:0.26rem;
+    display: block;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+
+.other-share span{
+    display: block;
+    margin-left: 0.35rem;
+    font-size: 0.2rem;
+    color: #9d9d9d;
+}
+

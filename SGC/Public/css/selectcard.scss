@@ -1,0 +1,218 @@
+$url:'/SGC/Public/img/';
+@mixin bac{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+@mixin flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+  background-color: #EFEFEF;
+}
+
+.topbar{
+  width: 100%;
+  height: 2.4rem;
+  background: #EF3743;
+  .header{
+    width: 100%;
+    height:0.88rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    & .hleft{
+      width: 0.53rem;
+      height: 0.53rem;
+      background-image: url($url + "001.png");
+      @include bac;
+    }
+    & .hmid{
+      width: 1.7rem;
+      font-size: 0.3rem;
+      color: #FFFFFF;
+      text-align: center;
+    }
+    & .hmid .en{
+      font-size: 0.2rem;
+    }
+    & .hmid .decorate{
+      width: 0.5rem;
+      height: 0.04rem;
+      background-image: url($url + "orderline_03.png");
+      @include bac;
+      margin:0 auto;
+    }
+    & .hright{
+      width: 0.53rem;
+      height: 0.53rem;
+      background-image: url($url + "004.png");
+      @include bac;
+    }
+  }
+  .letter{
+    width: 100%;
+    height: 0.88rem;
+    padding: 0.2rem 0.68rem;
+    display: flex;
+    p{
+      color: #FFFFFF;
+      font-size: 0.28rem;
+      font-weight: 100;
+
+    }
+    div{
+      flex: 1;
+      color: #CAC9C8;
+      font-size: 0.2rem;
+      font-weight: 100;
+    }
+    & >div:nth-child(2){
+      color: #F1F1F1;
+      line-height: 0.88rem;
+      font-size: 0.36rem;
+      text-align: right;
+    }
+  }
+}
+.banner .contentbox{
+  @include flex;
+  transform: translateY(-0.5rem);
+  .card{
+    width: 5.76rem;
+    height: 3.26rem;
+    background-color: #FCD22B;
+    border-radius: 0.2rem;
+    color: #FFFFFF;
+    font-size: 0.3rem;
+    padding: 0.4rem 0.45rem;
+    .tit{
+      @include flex;
+      margin-bottom: 0.2rem;
+    }
+    .tit .leftT{
+      width: .42rem;
+      height: .42rem;
+      background: url($url + "select_03.png");
+      @include bac;
+    }
+    .tit .midT span{
+      font-size: 0.2rem;
+    }
+    .tit .rightT{
+      width: 1rem;
+      height: .44rem;
+      background: url($url + "select_05.png");
+      @include bac;
+      text-align: right;
+      color: #8B8B8B;
+      font-weight: 600;
+      line-height: 0.44rem;
+    }
+    p:nth-of-type(1){
+      width: 100%;
+      text-align: center;
+      font-size: 0.36rem;
+      font-weight: 600;
+      margin-top: 0.4rem;
+      margin-bottom: 0.2rem;
+    }
+    p:nth-of-type(2){
+      width: 100%;
+      text-align: right;
+      font-size: 0.24rem;
+      font-weight: 400;
+      margin-top: 0.5rem;
+      margin-bottom: 0.2rem;
+    }
+  }
+
+}
+.banner .wiper{
+  width: 100%;
+  height: 0.4rem;
+  @include flex;
+  div{
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    background: #2EA3F6;
+  }
+}
+.infotips{
+  width: 100%;
+  background: #FFFFFF;
+  padding: 0.4rem 0.68rem;
+  .tip{
+    @include flex;
+    font-size: 0.3rem;
+    justify-content: flex-start;
+    margin-top:0.4rem;
+    color: #C8C8C8;
+    font-weight: 600;
+  }
+  .tip .point{
+    width: 0.28rem;
+    height: 0.28rem;
+    background-image: url($url + "select_10.png");
+    @include bac;
+    margin-right: 0.2rem;
+  }
+  .tip .detach{
+    width: 1.7rem;
+    height: .6rem;
+    background: #4B4B4B;
+    color: #FFFFFF;
+    text-align: center;
+    line-height: .6rem;
+    border-radius: .6rem;
+    font-weight: 100;
+    margin-left: 1.5rem;
+  }
+}
+.submit {
+  width: 4.04rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  background: #FFCC00;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  position: relative;
+  color: #FFFFFF;
+  font-size: 0.36rem;
+  font-weight: 600;
+  a{
+    color: #FFFFFF;
+  }
+  & div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: #FFFFFF;
+  }
+  & .pointL {
+    left: 0.2rem;
+  }
+  & .pointR {
+    right: 0.2rem;
+  }
+  & p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.9rem;
+  }
+
+}
+.boot{
+  width: 100%;
+  height: 1rem;
+}

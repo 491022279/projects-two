@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><?php echo $title?></title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'rem.css'?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'bootstrap.min.css'?>">
+    <script src="<?php echo JS_PATH . 'jquery.min.js'?>"></script>
+    <script src="<?php echo JS_PATH . 'index_manager.js'?>"></script>
+    <style>
+        .dropdown:hover .dropdown-toggle span{
+            transform: rotate(180deg);
+        }
+    </style>
+    <script>
+        $(function () {
+            var tip = $('.tip');
+            $(document).ajaxStart(function () {
+                tip.animate({width: '80%'});
+            });
+            $(document).ajaxSuccess(function () {
+                tip.stop().animate({width: '100%'}, function () {
+                    $(this).hide();
+                })
+            })
+        })
+    </script>
+</head>
+<body>
+<div class="tip"></div>
+<div class="nav">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">送青来后台管理界面</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">首页后台管理<span class="sr-only">(current)</span></a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">商店后台管理 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">商品分类</a></li>
+                            <li><a href="#">所有商品</a></li>
+                            <li><a href="#">营养师搭配</a></li>
+                            <li class="<?php echo $title=='商品详情'?'active':'';?>"><a href="/SGC/index.php/fruit_details">商品详情</a></li>
+                            <li class="<?php echo $title=='商品店铺'?'active':'';?>"><a href="/SGC/index.php/fruit_store">商品店铺</a></li>
+                            <li class="<?php echo $title=='商品收藏'?'active':'';?>"><a href="/SGC/index.php/fruit_collection">商品收藏</a></li>
+                            <li class="<?php echo $title=='商品评论'?'active':'';?>"><a href="/SGC/index.php/fruit_comment">商品评论</a></li>
+                            <li class="<?php echo $title=='商品内容'?'active':'';?>"><a href="/SGC/index.php/fruit_intro">商品内容</a></li>
+                            <li class="<?php echo $title=='商品图片'?'active':'';?>"><a href="/SGC/index.php/fruit_pic">商品图片</a></li>
+                            <li class="<?php echo $title=='热门商品'?'active':'';?>"><a href="/SGC/index.php/hot_search">热门商品</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">订单后台管理 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人后台管理 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">One more separated link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>

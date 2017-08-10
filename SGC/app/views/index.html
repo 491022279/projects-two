@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>送青来</title>
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=0">
+    <meta name="renderer" content="webkit"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <script src="<?php echo JS_PATH . 'jquery.min.js'?>"></script>
+    <script src="<?php echo JS_PATH . 'index.js'?>"></script>
+    <script src="<?php echo JS_PATH .'iscroll.js'?>"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'rem.css'?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'bass.css'?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'index.css'?>">
+    <script src="<?php echo JS_PATH . 'footer.js'?>"></script>
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'footer.css' ?>">
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'idangerous.swiper.css' ?>">
+
+    <link rel="stylesheet" href="<?php echo CSS_PATH . 'swiper.min.css'?>">
+    <script src="<?php echo JS_PATH . 'swiper.min.js'?>"></script>
+</head>
+<style>
+    .masks{
+        width:100%;
+        height:100%;
+        position: fixed;
+        top:0;
+        left:0;
+        background: url("/SGC/Public/img/asdfygufasj.png")no-repeat center center/cover;
+        z-index: 999999999;
+    }
+    .masks div{
+        width:3rem;
+        height:1rem;
+        position: absolute;
+        top:3.2rem;
+        left:2.3rem;
+        z-index: 9999999999999;
+    }
+</style>
+<style>
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    .swiper-slide img{
+        height:100%;
+        width:100%;
+
+    }
+    .swiper-pagination-bullet{
+        width:.2rem;
+        height:.2rem;
+        background: #fff;
+        opacity:1;
+    }
+    .swiper-pagination-bullet-active{
+        background: yellow;
+        -moz-box-shadow: 0 0 0.22rem rgba(255,255,255,0.3);
+    }
+</style>
+<script>
+    $(function(){
+        $(".masks div").on("click",function(){
+            localStorage.setItem('data','123456');
+            $(".masks").remove();
+        })
+        if(localStorage.getItem('data')){
+            $(".masks").css('display','none');
+        }
+
+    })
+</script>
+<div class="masks">
+    <div></div>
+</div>
+    <input type="hidden" value="<?php echo $id?>" id="hidden">
+    <div style="background: #f1f0f0;">
+        <div class="z_nav">
+            <div class="wrappers">
+                <ul class="list">
+                    <li class="address"></li>
+                    <li class="designation_wrapper">
+                        <div class="des_up">送青来</div>
+                        <div class="des_down"></div>
+                    </li>
+                    <li class="search-list">
+                        <a href="/SGC/index.php/search" style="width: 100%;height: 100%;display: block">
+                            <div class="search"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="scrolls" style="position: absolute;top: 0rem;bottom:0.88rem;width: 100%;height:auto;overflow: hidden">
+            <div style="width: 100%;height: auto;">
+        <div class="swiper-container" style="width:100%;margin: 0">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide" style="width:100%"><img src="<?php echo IMG_PATH . 'z_banner.png'?>" alt=""></div>
+                <div class="swiper-slide" style="width:100%"><img src="<?php echo IMG_PATH . 'z_banner2.png'?>" alt=""></div>
+                <div class="swiper-slide" style="width:100%"><img src="<?php echo IMG_PATH . 'z_banner3.png'?>" alt=""></div>
+                <div class="swiper-slide" style="width:100%"><img src="<?php echo IMG_PATH . 'z_banner4.png'?>" alt=""></div>
+                <div class="swiper-slide" style="width:100%"><img src="<?php echo IMG_PATH . 'banner.png'?>" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="shadow_wrapper">
+            <div class="shadow"></div>
+        </div>
+        <div class="product_selling">
+            <div class="Control">
+                <div class="left active item" id="sell">
+                    <div class="title">热卖推荐</div>
+                    <div class="wenzi">REMAITUIJIAN</div>
+                </div>
+                <div class="center"></div>
+                <div class="right item" id="offer">
+                    <div class="title">特价推荐</div>
+                    <div class="wenzi">TEJIATUIJIAN</div>
+                </div>
+            </div>
+            <div class="hot_products">
+
+                <ul class="food food1 active">
+                    <?php foreach($data as $v):?>
+                    <a href="/SGC/index.php/search/details?id=<?php echo $v['id']?>">
+                        <li data="<?php echo json_encode($v);?>">
+                        <div class="food_img">
+                            <img src="<?php echo $v['pic'] ?>">
+                        </div>
+                        <div class="content">
+                            <div class="tit">
+                                <?php echo $v['name']?>
+                            </div>
+                            <div class="name"><?php echo $v['english']?><span><?php echo $v['eng']?></span></div>
+                            <div class="xiantiao"></div>
+                            <div class="choice_list">
+                                <div class="pink">
+                                    <div class="pink_img"></div>
+                                    <span><?php echo $v['pink']?></span>
+                                </div>
+                                <div class="blue">
+                                    <div class="blue_img"></div>
+                                    <span><?php echo $v['blue']?></span>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    </a>
+                    <?php endforeach; ?>
+                </ul>
+
+                <ul class="food food2">
+                    <?php foreach($data3 as $v):?>
+                    <li class="items" data="<?php echo json_encode($v);?>">
+                        <div class="imgs">
+                            <div class="price1">
+                                <?php echo $v['price']?>
+                            </div>
+                            <img src="<?php echo $v['pic']?>" alt="">
+                            <div class="br1"></div>
+                            <div class="round1"></div>
+                            <div class="shangbiao1"></div>
+                        </div>
+                        <div class="title1"><?php echo $v['name']?></div>
+                        <div class="content1"><?php echo $v['title']?></div>
+                        <div class="xingxing1">
+                            <?php for($i=0;$i<$v['num'];$i++){
+                           echo "<img src=$v[xing]>";}
+                            ?>
+                        </div>
+                        <div class="mask1"></div>
+                        <div class="goumai1">购买</div>
+                    </li>
+                    <?php endforeach;?>
+                </ul>
+
+            </div>
+        </div>
+        <div class="recommend">
+            <div class="fresh"></div>
+            <div class="fresh_name"></div>
+            <div class="fresh_icon"></div>
+        </div>
+        <div class="fruit_list">
+            <ul class="lists active">
+                <?php foreach($data1 as $v):?>
+                <a href="/SGC/index.php/search/details?id=<?php echo $v['id']?>">
+                    <li class="fruits" data="<?php echo json_encode($v);?>">
+                        <div class="or_imges">
+                            <img src="<?php echo $v['pic1']?>">
+                            <ul class="or_mask">
+                                <li></li>
+                                <li>
+                                    <div class="like">
+                                        <div class="likes"></div>
+                                        <span><?php echo $v['nums1']?></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="collect">
+                                        <div class="collects"></div>
+                                        <span><?php echo $v['nums2']?></span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="mask"></div>
+                        <div class="tab">
+                            <div class="wz"><?php echo $v['name1']?></div>
+                            <div class="english"><?php echo $v['english2']?></div>
+                            <div class="cont"><?php echo $v['titles']?></div>
+                            <div class="xing">
+                                <div class="xingxing">
+                                    <?php for($i=0;$i<$v['num'];$i++){
+                                        echo "<img src=$v[xings]>";}?>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </a>
+
+                <?php endforeach; ?>
+            </ul>
+            <ul class="lists">
+                <?php foreach($data2 as $v):?>
+                    <div class="other-content" data="<?php echo json_encode($v);?>">
+                        <div class="other-content-box">
+                            <div align="center" class="other-content-img">
+                                <a href="#">
+                                    <img src="<?php echo $v['pic']?>" alt="">
+                                </a>
+                            </div>
+                            <div class="other-content-con">
+                                <div class="other-content-title">
+                                    <h2> <a href="/SGC/index.php/search/details"><?php echo $v['name']?></a></h2>
+                                    <h3><a href="/SGC/index.php/search/details"><strong><?php echo $v['title']?></strong><?php echo $v['title2']?></a></h3>
+                                </div>
+                                <p><a href="/SGC/index.php/search/details"><?php echo $v['content']?></a></p>
+                                <div class="other-content-share">
+                                    <div class="other-share">
+                                        <div class="other-share-img" style="background-image: url('<?php echo IMG_PATH?>s_shouceng.png')"></div>
+                                        <span><?php echo $v['shoucang']?></span>
+                                    </div>
+                                    <div class="other-share">
+                                        <div class="other-share-img" style="background-image: url('<?php echo IMG_PATH?>s_gouwu.png')"></div>
+                                        <span><?php echo $v['gouwuche']?></span>
+                                    </div>
+                                    <div class="other-share">
+                                        <div class="other-share-img" style="background-image: url('<?php echo IMG_PATH?>s_dzan.png')"></div>
+                                        <span><?php echo $v['like1']?></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="hot" style="background-image: url('<?php echo IMG_PATH?>hot.png')">最新</div>
+                        </div>
+                    </div>
+                <?php endforeach;?>
+            </ul>
+        </div>
+        <!--<div class="box" style=" width:100%;height:1.5rem;margin-top: .1rem"></div>-->
+    </div>
+    </div>
+</div>
+<?php include VIEW_PATH.'footer.html'?>
+</body>
+</html>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        slidesPerView: 1,
+        paginationClickable: true,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: 3000
+    });
+</script>

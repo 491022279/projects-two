@@ -1,0 +1,348 @@
+/*头部*/
+header{
+    height: 0.88rem;
+    width:100%;
+    /*background: red;*/
+    background:url("../img/headerb.png") center center;
+    padding:0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+}
+header .top{
+    width: 0.6rem;
+    height:0.6rem;
+}
+header .mid{
+    width:60%;
+    height:100%;
+}
+header .mid span{
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+header .mid p{
+    font-size: 0.14rem;
+    font-weight:500;
+    color: white;
+    margin-top: 0.5rem;
+}
+header .right{
+
+    background-size: 100%;
+}
+header .dow{
+    height:0.05rem;
+    width:30%;
+    margin: 0 auto;
+    margin-top:0.1rem;
+    background:url("../img/wenzixia.png") center center no-repeat;
+}
+body{
+    background:#f1f1f1;
+}
+/*中间*/
+.mid .banner{
+    width:100%;
+    height:2.8rem;
+}
+.mid .banner img{
+    height:100%;
+    width:100%;
+}
+.mid_ak{
+    position: relative;
+}
+.mid_ak .art{
+    height: 0.15rem;
+    width:0.15rem;
+    background: url("../img/atr.png")center center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top:0.3rem;
+    right:2.95rem;
+}
+.mid_a{
+    width:100%;
+    height:1.25rem;
+    background:#F1F0F0;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid_ab{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mid_a h5{
+    font-size:0.2rem;
+    color:#FFB412;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+.mid_a p{
+    font-size:0.24rem ;
+    font-weight: 600;
+    margin-top:-0.46rem;
+}
+.mid_a span{
+    font-size: 0.24rem;
+    color: #4E4E4E;
+    font-weight:600;
+    margin-top: -0.3rem;
+}
+
+.mid_a .across{
+    width:10%;
+    height:0.1rem;
+    background:url("../img/mid_a1.png") center center no-repeat;
+    margin: 0 0.2rem;
+}
+.control{
+    height:2.5rem;
+    width:100%;
+    padding:0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    background:#F1F0F0;
+
+}
+.fruit{
+    height:46%;
+    width:49%;
+    background: red;
+    padding-top: 0.25rem;
+    position: relative;
+}
+.foods{
+    background: url("../img/sysp.png") center center no-repeat;
+    background-size: 100%;
+}
+.fruit span{
+    font-size: 0.20rem;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    top:0.6rem;
+    right:0.5rem;
+}
+.fruit p{
+    font-size: 0.20rem;
+    color: white;
+    display: block;
+    float: right;
+    margin-right: 0.5rem;
+}
+.fruit h5{
+    font-size: 0.24rem;
+    color: white;
+    font-weight: 600;
+    display: block;
+    float: right;
+    margin-right: 0.1rem;
+}
+.fruit div{
+    height:0.6rem;
+    width:0.1rem;
+    background: url("../img/shu.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0.3rem;
+    right:0.3rem;
+
+}
+.nutrition{
+    background: url("../img/yydp.png") center center no-repeat;
+    background-size: 100%;
+}
+.recommend{
+    background:url("../img/djtj.png") center center no-repeat;
+    background-size: 100%;
+}
+.fruitage{
+    background: url("../img/jksg.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.mid_bk{
+    position: relative;
+}
+.mid_bk .art{
+    height: 0.15rem;
+    width:0.15rem;
+    background: url("../img/atr.png")center center no-repeat;
+    background-size: 50%;
+    position: absolute;
+    top:0.3rem;
+    right:2.95rem;
+}
+.mid_b{
+    width:100%;
+    height:1.25rem;
+    background:#F1F0F0;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mid_bb{
+    width:20%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mid_b h5{
+    font-size:0.2rem;
+    color:#F1113A;
+    font-weight: 600;
+    margin-top: 0.3rem;
+}
+.mid_b p{
+    font-size:0.24rem ;
+    font-weight: 600;
+    margin-top:-0.46rem;
+}
+.mid_b span{
+    font-size: 0.24rem;
+    color: #4E4E4E;
+    font-weight:600;
+    margin-top: -0.3rem;
+}
+
+.mid_b .across{
+    width:10%;
+    height:0.1rem;
+    background:url("../img/mid_a1.png") center center no-repeat;
+    margin: 0 0.2rem;
+}
+.wrapper{
+    width:100%;
+    background:#F1F0F0;
+    padding:0 0.25rem;
+}
+.wrapper .wrapper_list{
+    width:100%;
+    height:100%;
+}
+.wrapper .wrapper_list .list{
+    width:100%;
+    height:1.5rem;
+    background:white;
+    border-radius: 0.2rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+}
+.wrapper .wrapper_list .list img{
+    width:30%;
+    height:100%;
+    border-radius: 0.2rem;
+}
+.wrapper .wrapper_list .list .list_mid{
+    width:57%;
+    height:100%;
+    padding-left: 0.25rem;
+    position: relative;
+}
+.list_mid .list_span{
+    font-size: 0.26rem;
+    position: absolute;
+    top: 0.1rem;
+    left:0.4rem;
+    font-weight: 600;
+    color: #5E5E5E;
+}
+.list_mid p{
+    font-size: 0.24rem;
+    position: absolute;
+    top: 0.6rem;
+    left:1.2rem;
+}
+.list_mid h1{
+    font-size: 0.22rem;
+    font-weight: 600;
+    color: red;
+    position: absolute;
+    top:0.6rem;
+    left:2rem;
+}
+.list_mid h2{
+    font-size: 0.24rem;
+    color: #ccc;
+    position: absolute;
+    top:0.6rem;
+    left:2.7rem;
+}
+.list_mid .list_tab{
+    width:100%;
+    height:0.3rem;
+    position: absolute;
+    bottom:0.1rem;
+    left:0.2rem;
+    /*background: red;*/
+    overflow: hidden;
+}
+.list_mid .list_tab .xing{
+    float: left;
+    width:0.3rem;
+    height:0.3rem;
+    background: url("../img/shoucang.png") center center no-repeat;
+    background-size: 100%;
+    margin-left: 0.3rem;
+}
+.list_mid .list_tab .shop{
+    float: left;
+    width:0.3rem;
+    height:0.3rem;
+    background: url("../img/gouwuche.png") center center no-repeat;
+    background-size: 100%;
+    margin-left: 0.5rem;
+}
+.list_mid .list_tab .good{
+    float: left;
+    width:0.3rem;
+    height:0.3rem;
+    background: url("../img/heart.png") center center no-repeat;
+    background-size: 100%;
+    margin-left: 0.5rem;
+}
+.list_mid .list_tab span{
+    float:left;
+    font-size: 0.24rem;
+    font-weight: 500;
+    margin-left: 0.1rem;
+    color: red;
+}
+.wrapper_list .list .list_mid img{
+    width:0.88rem;
+    height:0.88rem;
+    position: absolute;
+    top:0.4rem;
+    left:0.3rem;
+}
+.wrapper .wrapper_list .list .list_img{
+    width:15%;
+    height:100%;
+    border-radius: 0.2rem;
+    text-align: center;
+    line-height: 1.5rem;
+
+}
+.wrapper .wrapper_list .list .list_img img{
+    height:0.6rem;
+    width:0.6rem;
+
+}

@@ -1,0 +1,136 @@
+<?php include VIEW_PATH."header.html"?>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>searchend.css">
+<header>
+    <div class="top left" ><a href=""style="width:100%;height: 100%;"></a></div>
+    <div class="top mid">
+        <span>商品分类</span>
+        <p>SHANG PIN FEN LEI</p>
+        <div class="dow"></div>
+    </div>
+    <div class="top right"><a href="" style="width:100%;height: 100%;display: block"></a></div>
+</header>
+<section>
+    <div class="searchbox">
+        <div class="neikuan">
+            <input type="text" placeholder="搜一搜你想要的......" onfocus="this.placeholder=''" onblur="this.placeholder='搜一搜你想要的......'"
+                   id="search">
+            <button>
+                <img src="<?php echo IMG_PATH?>s_search.png" alt="">
+            </button>
+        </div>
+    </div>
+    <div class="hot-search">
+        <div class="neikuan">
+            <div class="hot-search-title">
+                <div class="fruit-one" style='background:url(<?php echo IMG_PATH?>s_watermelon.png) no-repeat center/cover'></div>
+                <ul class="title-right">
+                    <li>
+                        <p><strong>热门</strong>搜索</p>
+                    </li>
+                    <li>
+                        <p><strong>RENMEN</strong>SOSUOCI</p>
+                        <P><strong>4</strong><span>个结果</span></P>
+                    </li>
+                    <li style="background:url(<?php echo IMG_PATH?>s_divider.png) no-repeat center/cover"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bast-search">
+        <div class="neikuan">
+            <div class="bast-search-title">
+                <strong class="bast-title-chinese">最优结果</strong>
+                <span class="bast-title-english">Best match result</span>
+            </div>
+            <div class="bast-content">
+                <div class="hot-search-title">
+                    <div class="fruit-one1" style='background:url(<?php echo IMG_PATH?>s_touxiang-1.png) no-repeat center/cover'></div>
+                    <ul class="title-right">
+                        <li>
+                            <p><strong>REMEN</strong>TUIJIAN</p>
+                        </li>
+                        <li>
+                            <p><?php echo $fruit_store['name']?></p>
+                            <P><img style="margin-right: 0.1rem" src="<?php echo IMG_PATH?>alarm-clock.png"/> <span>16:41</span></P>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bast-content-img">
+                    <a href="#">
+                        <div style="z-index:8;top:0;opacity:1;width:6.55rem;background-image: url('<?php echo $fruit_pic['pic1']?>')"></div>
+                    </a>
+                        <div style="z-index:6;top:0.1rem;opacity:0.8;width:6.35rem;background:red;"></div>
+                        <div style="z-index:4;top:0.2rem;opacity:0.6;width:6.15rem;background:red;"></div>
+                        <p><a href=""><?php echo $fruit_intro['word10']?></a></p>
+                </div>
+                <div class="bast-content-share">
+                    <div class="bast-content-share-b">
+                        <img src="<?php echo IMG_PATH?>s_address.png" alt="">
+                        <div class="bast-content-share-v">
+                            <h2>山西太原</h2>
+                            <span>SHANXITAIYUAN</span>
+                        </div>
+                    </div>
+                    <div class="bast-content-share-b">
+                        <img src="<?php echo IMG_PATH?>s_dog.png" alt="">
+                        <img src="<?php echo IMG_PATH?>s_child.png" alt="">
+                        <img src="<?php echo IMG_PATH?>s_zhizhu.png" alt="">
+                        <img src="<?php echo IMG_PATH?>s_meinv.png" alt="">
+                        <img src="<?php echo IMG_PATH?>s_paizhao.png" alt="">
+                        <div style="background-image: url('<?php echo IMG_PATH?>s_yellow.png')">235</div>
+                    </div>
+                    <div class="bast-content-share-b">
+                        <img src="<?php echo IMG_PATH?>s_xing.png" alt="">
+                        <div class="bast-content-share-v">
+                            <h2><?php echo $fruit_collection['browsenum']?></h2>
+                            <span>SHOUCANG</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="other-search">
+        <div class="neikuan">
+            <div class="bast-search-title">
+                <strong class="bast-title-chinese">其他结果</strong>
+                <span class="bast-title-english">Best match result</span>
+            </div>
+            <div class="other-content">
+                <?php foreach ($hot_search as $k=>$v):?>
+                <div class="other-content-box">
+                    <div align="center" class="other-content-img">
+                        <a href="#">
+                            <img src="<?php echo $v['img']?>" alt="">
+                        </a>
+                    </div>
+                    <div class="other-content-con">
+                            <div class="other-content-title">
+                                <h2> <a href="#"><?php echo $v['etext']?></a></h2>
+                                <h3><a href="#"><?php echo $v['eword']?></a></h3>
+                            </div>
+                            <p class="overmore"><a href="#"><?php echo $fruit_intro['word10']?></a></p>
+                        <div class="other-content-share">
+                          <div class="other-share">
+                              <div class="other-share-img" style="background-image: url('<?php echo $fruit_collection['browse']?>')"></div>
+                              <span><?php echo $fruit_collection['browsenum']?></span>
+                          </div>
+                          <div class="other-share">
+                              <div class="other-share-img" style="background-image: url('<?php echo $fruit_collection['thumb']?>')"></div>
+                                <span><?php echo $fruit_collection['thumbnum']?></span>
+                          </div>
+                          <div class="other-share">
+                              <div class="other-share-img" style="background-image: url('<?php echo $fruit_collection['cart']?>')"></div>
+                              <span><?php echo $fruit_collection['cartnum']?></span>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="hot" style="background-image: url('<?php echo IMG_PATH?>hot.png')">最新</div>
+                </div>
+                <?php endforeach;?>
+            </div>
+        </div>
+    </div>
+</section>
+

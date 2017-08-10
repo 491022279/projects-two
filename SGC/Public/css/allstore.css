@@ -1,0 +1,271 @@
+/*头部*/
+header {
+    height: 0.88rem;
+    width: 100%;
+    /*background: red;*/
+    background: url("../img/headerb.png") center center;
+    padding: 0 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+}
+
+header .top {
+    width: 0.6rem;
+    height: 0.6rem;
+}
+
+header .mid {
+    width: 60%;
+    height: 100%;
+}
+
+header .mid span {
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+
+header .mid p {
+    font-size: 0.14rem;
+    font-weight: 500;
+    color: white;
+    margin-top: 0.5rem;
+}
+
+header .right {
+    background-size: 100%;
+}
+
+header .left {
+    background: url("../img/001.png") center center no-repeat;
+    background-size: 100%;
+}
+
+header .dow {
+    height: 0.05rem;
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 0.1rem;
+    background: url("../img/wenzixia.png") center center no-repeat;
+}
+.wrappers{
+    width: 100%;
+    height: 100%;
+    padding:.25rem;
+}
+.wrappers_list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -.3rem;
+}
+.wrappers_list li{
+    width: 3.19rem;
+    height: 4.4rem;
+    border-radius: .2rem;
+    background: #353a45;
+    position: relative;
+    margin-top: .5rem;
+}
+.imgs{
+    width: 100%;
+    height: 2.42rem;
+    position: relative;
+}
+.imgs img{
+    width: 100%;
+    height: 2.42rem;
+}
+.br{
+    width: 100%;
+    height: 2.42rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+}
+.round{
+    width: .73rem;
+    height: .73rem;
+    border-radius: 50%;
+    background: #353a45;
+    position: absolute;
+    bottom:-.3rem;
+    left:40%;
+}
+.shangbiao{
+    width: .58rem;
+    height: .58rem;
+    position: absolute;
+    background: url("../img/all_icon.png") center center no-repeat;
+    background-size: 100%;
+    bottom:-.25rem;
+    left:42.5%;
+}
+.price{
+    width: 1.16rem;
+    height: .48rem;
+    position: absolute;
+    top:-0.1rem;
+    left:35%;
+    background: url("../img/all_price.png") center center no-repeat;
+    background-size: 100%;
+    z-index: 9999999999999;
+    font-size: .26rem;
+    color:#fff;
+    text-align: center;
+    line-height: .48rem;
+}
+.title{
+    width: 100%;
+    height: .3rem;
+    text-align: center;
+    line-height: .3rem;
+    font-size: .26rem;
+    color:#fff;
+    font-weight: 600;
+    margin-top: .4rem;
+}
+.content{
+    width: 100%;
+    height: .3rem;
+    color:#b28849;
+    font-size: .28rem;
+    font-weight: 600;
+    text-align: center;
+}
+.xingxing{
+    width: 1.38rem;
+    height: .2rem;
+    margin:.1rem auto;
+    display: flex;
+    justify-content: center;
+}
+.xingxing img{
+    width: .2rem;
+    height: .2rem;
+    background: url("../img/all_xing.png") center center no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+    display: block;
+    float: left;
+    margin-left: .05rem;
+}
+.mask{
+    width:100%;
+    height: .39rem;
+    position: absolute;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+}
+.goumai{
+    width:1.77rem;
+    height: .54rem;
+    position: absolute;
+    bottom:-.21rem;
+    background: url("../img/goumai.png") center center no-repeat;
+    background-size: 100%;
+    left:20%;
+    font-size: .28rem;
+    color:#fff;
+    text-align: center;
+    line-height: .54rem;
+    font-weight: 600;
+}
+.wrappers_list li:nth-child(2){
+    width: 3.10rem;
+    height: 3.39rem;
+}
+.wrappers_list li:nth-child(2) .imgs{
+    width: 100%;
+    height: 1.7rem;
+    position: relative;
+}
+.wrappers_list li:nth-child(2) .imgs img{
+    width: 100%;
+    height: 1.7rem;
+}
+.wrappers_list li:nth-child(2) .imgs .br{
+    width: 100%;
+    height: 1.7rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+}
+.wrappers_list li:nth-child(2) .title{
+   margin-top: 0.3rem;
+}
+.wrappers_list li:nth-child(4){
+    margin-top: -.5rem;
+}
+.wrappers_list li:nth-child(5){
+    width: 3.10rem;
+    height: 3.39rem;
+}
+.wrappers_list li:nth-child(5) .imgs{
+    width: 100%;
+    height: 1.7rem;
+    position: relative;
+}
+.wrappers_list li:nth-child(5) .imgs img{
+    width: 100%;
+    height: 1.7rem;
+}
+.wrappers_list li:nth-child(5) .imgs .br{
+    width: 100%;
+    height: 1.7rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+}
+.wrappers_list li:nth-child(5) .title{
+    margin-top: 0.3rem;
+}
+.wrappers_list li:nth-child(6){
+    width: 3.10rem;
+    height: 3.39rem;
+    margin-top: -.3rem;
+}
+.wrappers_list li:nth-child(6) .imgs{
+    width: 100%;
+    height: 1.7rem;
+    position: relative;
+}
+.wrappers_list li:nth-child(6) .imgs img{
+    width: 100%;
+    height: 1.7rem;
+}
+.wrappers_list li:nth-child(6) .imgs .br{
+    width: 100%;
+    height: 1.7rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+}
+.wrappers_list li:nth-child(6) .title{
+    margin-top: 0.3rem;
+}
+.wrappers_list li:nth-child(8){
+    margin-top: -.3rem;
+}
+.bottom{
+    width:100%;
+    height: 2rem;
+    background: url("../img/z_dixian.png") center center no-repeat;
+    background-size: 100%;
+    font-size: .22rem;
+    color:#c3c3c3;
+    text-align: center;
+    line-height: 2rem;
+}

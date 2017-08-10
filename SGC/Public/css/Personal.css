@@ -1,0 +1,218 @@
+body{
+    background: #F5F5F5;
+}
+.portrait{
+    width:100%;
+    height: auto;
+    padding:0.5rem;
+    background: url("../img/4986451321186.png")no-repeat center center/cover;
+    position: absolute;
+}
+.portrait .lcon1,.lcon2{
+    width: 0.4rem;
+    height:0.4rem;
+    position: absolute;
+}
+.portrait .lcon1{
+    top:0.6rem;
+    left:2rem;
+    background: url("../img/0qwsdfg5.png")no-repeat center center/cover;
+}
+.portrait .lcon2{
+    top:0.6rem;
+    right:2rem;
+    background: url("../img/02azxcvbn.png")no-repeat center center/cover;
+}
+.portrait .portrait_logo{
+    width:1.6rem;
+    height:1.6rem;
+    margin: 0 auto;
+}
+.portrait .portrait_logo img{
+    width:100%;
+    border-radius: 50%;
+}
+.portrait .portrait_content{
+    width:100%;
+    height:auto;
+}
+.portrait .portrait_content h3{
+    font-size: 0.22rem;
+    color:#fff;
+    text-align: center;
+}
+.portrait .portrait_content h4{
+    font-size: 0.22rem;
+    color:#fff;
+    text-align: center;
+}
+.portrait .portrait_content .stars{
+    width:1.6rem;
+    height:0.3rem;
+    margin: 0 auto;
+}
+.portrait .portrait_content .star{
+    width:0.3rem;
+    height:0.3rem;
+    float: left;
+    background: url("../img/iuhkjsyhvfoniklehsnfk.png")no-repeat center center/cover;
+}
+.portrait .portrait_content .star img{
+    width:100%;
+    float: left;
+}
+.portrait .portrait_content p{
+    font-size: 0.22rem;
+    color:#fff;
+    text-align: center;
+    margin-top: 0.1rem;
+}
+.portrait .portrait_option{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content:space-around;
+}
+.portrait .portrait_option .Collection,.Coupon{
+    height:0.9rem;
+    width: 2.3rem;
+    border-radius: 30px;
+    margin-top: 0.3rem;
+    padding: 5px;
+}
+.portrait .portrait_option .Collection{
+    background: #293646;
+}
+.portrait .portrait_option .Coupon{
+    background: #D6202B;
+}
+.portrait .portrait_option .Collection img,.Coupon img{
+    width:0.65rem;
+    height:0.65rem;
+    float: left;
+}
+.portrait .portrait_option .Collection p,.Coupon p{
+    font-size: 0.3rem;
+    color:#FFFFFF;
+    padding-left: 0.8rem;
+    margin-bottom: 0.02rem;
+}
+.portrait .portrait_option .Collection div,.Coupon div{
+    width:62%;
+    height: 1px;
+    border-bottom: 1px dashed #fff;
+    float: right;
+}
+.portrait .portrait_option .Collection span,.Coupon span{
+    font-size: 0.2rem;
+    color:#fff;
+    width:0.8rem;
+    text-align: center;
+    float: left;
+}
+.portrait_option a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+.center-section .option{
+    width:100%;
+    height: auto;
+    padding: 0 0.23rem 0 0.23rem;
+    position: absolute;
+    top:4.5rem;
+}
+.center-section .option ul{
+    width:100%;
+    height:100%;
+}
+.center-section .option ul li{
+    width:100%;
+    height:1rem;
+    background: #fff;
+    margin-bottom: 0.15rem;
+    padding: 0.2rem 0.28rem 0.27rem 0.27rem;
+}
+.center-section .option ul li p{
+    display: block;
+    font-size: 0.22rem;
+    color:#505050;
+    line-height: 0.5rem;
+    float: left;
+}
+.center-section .option ul li span{
+    font-size: 0.5rem;
+}
+.center-section .option ul li img{
+    height:100%;
+    margin-right: 0.3rem;
+    float: left;
+}
+.center-section .option ul li a{
+    display: block;
+    width:0.3rem;
+    height:0.45rem;
+    float: right;
+    margin-top: 0.05rem;
+    background: url("../img/ahiuhknfk.png")no-repeat center center/cover;
+}
+.center-section .option ul li .wallet {
+    width: 0.5rem;
+    height: 0.5rem;
+    background: url("../img/aeyujfgcgxtrgf.png") no-repeat center center/100%;
+    font-size: 10px;
+    text-align: center;
+    line-height: 0.5rem;
+    color: #fff;
+}
+
+header{
+    height: 0.88rem;
+    width:100%;
+    /*background: red;*/
+    background:url("../img/a6s4dwq6f5.png") center center;
+    padding:0 0.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.06rem;
+}
+header .top{
+    width: 0.6rem;
+    height:0.6rem;
+}
+header .mid{
+    width:60%;
+    height:100%;
+}
+header .mid span{
+    font-size: 0.28rem;
+    font-weight: 600;
+    color: white;
+}
+header .mid p{
+    font-size: 0.14rem;
+    font-weight:500;
+    color: white;
+    margin-top: 0.5rem;
+}
+header .right{
+    background: url("../img/006.png")no-repeat center center/cover;
+}
+header a{
+    display: block;
+    width:100%;
+    height:100%;
+}
+header .left{
+    background: url("../img/005.png")center center no-repeat ;
+    background-size: 100%;
+}
+header .dow{
+    height:0.05rem;
+    width:30%;
+    margin: 0 auto;
+    margin-top:0.1rem;
+    background:url("../img/wenzixia.png") center center no-repeat;
+}

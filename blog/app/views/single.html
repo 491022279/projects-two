@@ -1,0 +1,144 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Single - Future Imperfect by HTML5 UP</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!--[if lte IE 8]><script src="<?php echo JS_PATH?>ie/html5shiv.js"></script><![endif]-->
+    <link rel="stylesheet" href="<?php echo CSS_PATH?>main.css" />
+    <!--[if lte IE 9]><link rel="stylesheet" href="<?php echo CSS_PATH?>ie9.css" /><![endif]-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="<?php echo CSS_PATH?>ie8.css" /><![endif]-->
+</head>
+<body class="single">
+
+<!-- Wrapper -->
+<div id="wrapper">
+    <input type="hidden" value="<?php echo $article['id']?>">
+    <!-- Header -->
+    <header id="header">
+        <h1><a href="/blog/">My Blog World</a></h1>
+        <nav class="links">
+            <ul>
+                <li><a href="https://www.baidu.com">百度</a></li>
+                <li><a href="https://www.zhihu.com">知乎</a></li>
+                <li><a href="http://www.csdn.net/">CSDN</a></li>
+                <li><a href="https://huaban.com/">花瓣</a></li>
+                <li><a href="http://www.templatesy.com/">模板</a></li>
+            </ul>
+        </nav>
+        <nav class="main">
+            <ul>
+                <li class="search">
+                    <a class="fa-search" href="#search">Search</a>
+                    <form id="search" method="get" action="#">
+                        <input type="text" name="query" placeholder="Search" />
+                    </form>
+                </li>
+                <li class="menu">
+                    <a class="fa-bars" href="#menu">Menu</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Menu -->
+    <section id="menu">
+
+        <!-- Search -->
+        <section>
+            <form class="search" method="get" action="#">
+                <input type="text" name="query" placeholder="Search" />
+            </form>
+        </section>
+
+        <!-- Links -->
+        <section>
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        <h3>Lorem ipsum</h3>
+                        <p>Feugiat tempus veroeros dolor</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Dolor sit amet</h3>
+                        <p>Sed vitae justo condimentum</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Feugiat veroeros</h3>
+                        <p>Phasellus sed ultricies mi congue</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <h3>Etiam sed consequat</h3>
+                        <p>Porta lectus amet ultricies</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Actions -->
+        <section>
+            <ul class="actions vertical">
+                <li><a href="#" class="button big fit">Log In</a></li>
+            </ul>
+        </section>
+
+    </section>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Post -->
+        <article class="post">
+            <header>
+                <div class="title">
+                    <h2><a href="#"><?php echo $article['title']?></a></h2>
+                    <p><?php echo $article['titles']?></p>
+                </div>
+                <div class="meta">
+                    <time class="published" datetime="2015-11-01"><?php echo $article['ctime']?></time>
+                    <a href="#" class="author"><span class="name">Jane Doe</span><img src="<?php echo IMG_PATH?>avatar.jpg" alt="" /></a>
+                </div>
+            </header>
+            <span class="image featured"><img src="../../<?php echo $article['pic']?>" alt="" /></span>
+            <p><?php echo $article['content']?></p>
+            <footer>
+                <ul class="stats">
+                    <li><a href="/blog/index.php/manager?id=<?php echo $article['id']?>">Edit it</a></li>
+                    <li><a href="javascript:;" class="icon fa-heart"><?php echo $article_info['good']?></a></li>
+                    <li><a href="javascript:;" class="icon fa-comment"><?php echo $article_info['bad']?></a></li>
+                </ul>
+            </footer>
+        </article>
+
+    </div>
+
+    <!-- Footer -->
+    <section id="footer">
+        <ul class="icons">
+            <li><a href="#" class="fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="fa-facebook"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="fa-rss"><span class="label">RSS</span></a></li>
+            <li><a href="#" class="fa-envelope"><span class="label">Email</span></a></li>
+        </ul>
+        <p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="<?php echo JS_PATH?>jquery.min.js"></script>
+<script src="<?php echo JS_PATH?>skel.min.js"></script>
+<script src="<?php echo JS_PATH?>util.js"></script>
+<!--[if lte IE 8]><script src="<?php echo JS_PATH?>ie/respond.min.js"></script><![endif]-->
+<script src="<?php echo JS_PATH?>main.js"></script>
+<script src="<?php echo JS_PATH?>single.js"></script>
+
+</body>
+</html>

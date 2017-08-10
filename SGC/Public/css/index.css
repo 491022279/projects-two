@@ -1,0 +1,811 @@
+body{
+    overflow: hidden;
+}
+.z_nav, .wrappers {
+    width: 100%;
+    height: .88rem;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    z-index: 888;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .25rem;
+}
+
+.wrappers .address {
+    width: 1.1rem;
+    height: .5rem;
+    background: url("../img/z_icon.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.wrappers .designation_wrapper {
+    width: 1.37rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -0.4rem;
+}
+
+.wrappers .designation_wrapper .des_up {
+    width: 100%;
+    height: .35rem;
+    font-size: .28rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-top: .1rem;
+}
+
+.wrappers .designation_wrapper .des_down {
+    width: 100%;
+    height: .35rem;
+    background: url("../img/z_icon2.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.search-list a {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-list a .search {
+    width: .4rem;
+    height: .4rem;
+    background: url("../img/search.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.win {
+    width: 100%;
+    height: 5.38rem;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imgBox {
+    width: 400%;
+    height: 5.38rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: deeppink;
+}
+.imgBox li{
+    width:7.5rem;
+    height: 100%;
+    display: block;
+    float: left;
+}
+.imgBox>li>img{
+    float: left;
+    width: 100%;
+    height: 5.38rem;
+}
+.titlebox {
+    width: 100%;
+    height: 1.23rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    margin: 0 auto;
+}
+
+.titlebox .z_solid {
+    width: 1.56rem;
+    height: .2rem;
+    background: url("../img/z_xian.png") center center no-repeat;
+    background-size: 100%;
+    margin: 0 auto;
+}
+
+.titlebox .z_title {
+    width: 4.7rem;
+    height: .35rem;
+    color: #fdfcfc;
+    font-size: .3rem;
+    margin: 0 auto;
+    font-weight: 400;
+}
+
+.titlebox .z_title span {
+    color: #67c439;
+}
+
+.titlebox .z_content {
+    width: 2rem;
+    height: 100%;
+    text-align: center;
+    letter-spacing: .1rem;
+    font-size: .23rem;
+    text-align: center;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: .07rem;
+}
+
+.btns {
+    width: 2rem;
+    height: .35rem;
+    position: absolute;
+    bottom:.5rem;
+    z-index: 999999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+}
+.button {
+    width: 0.2rem;
+    height: 0.2rem;
+    border-radius: 50%;
+    list-style: none;
+    outline: none;
+    background: #fff;
+    border:0;
+}
+
+.btns .button.hotss {
+    width: .35rem;
+    height: .35rem;
+    border-radius: 50%;
+    background: url("../img/z_btn.png") no-repeat center/cover;
+    border: 0;
+}
+
+.shadow_wrapper {
+    width: 100%;
+    height: .11rem;
+    background-color: #f1f0f0;
+}
+
+.shadow_wrapper .shadow {
+    width: 80%;
+    height: .11rem;
+    background: url("../img/z_shadow.png") no-repeat 50%/cover;
+    margin: 0 auto;
+}
+
+.product_selling {
+    width: 100%;
+    padding-top: .13rem;
+    background: #f1f0f0;
+}
+
+.product_selling .Control {
+    width: 4.42rem;
+    height: .75rem;
+    background: #2a3441;
+    border-radius: 5rem;
+    margin: .3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .12rem;
+}
+
+.Control .left, .Control .right {
+    width: 1.96rem;
+    height: .7rem;
+    background-color: #2a3441;
+    border-radius: 5rem;
+}
+
+.product_selling .Control .center {
+    width: .02rem;
+    height: .5rem;
+    background: url("../img/z_rect.png") no-repeat 50%/cover;
+}
+
+.product_selling .Control .active {
+    width: 1.96rem;
+    height: .7rem;
+    border-radius: 5rem;
+    background: url("../img/z_active.png") center center no-repeat;
+    background-size: 100%;
+}
+
+.product_selling .Control .left.active .title {
+    color: #fff;
+}
+
+.product_selling .Control .left.active .wenzi {
+    color: #fe8793;
+}
+
+.product_selling .Control .right.active .title {
+    color: #fff;
+}
+
+.product_selling .Control .right.active .wenzi {
+    color: #fe8793;
+}
+
+.product_selling .Control .left .title {
+    font-size: .3rem;
+    color: #7b91ad;
+    text-align: center;
+    line-height: .45rem;
+    font-weight: 600;
+}
+
+.product_selling .Control .left .wenzi {
+    font-size: .12rem;
+    color: #58697f;
+    text-align: center;
+    margin-top: -0.06rem;
+}
+
+.product_selling .Control .right .title {
+    font-size: .3rem;
+    color: #7b91ad;
+    text-align: center;
+    line-height: .45rem;
+    font-weight: 600;
+}
+
+.product_selling .Control .right .wenzi {
+    font-size: .12rem;
+    color: #58697f;
+    text-align: center;
+    margin-top: -0.06rem;
+}
+
+.hot_products {
+    width: 100%;
+    height: 3.72rem;
+    background: green;
+    background: url("../img/z_background.png");
+    background-size: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: .25rem;
+}
+
+.hot_products .food {
+    width: 6.84rem;
+    height: 3.23rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:0;
+    display: none;
+}
+
+.hot_products .food li {
+    width: 2.13rem;
+    height: 3.21rem;
+    background: #fff;
+    border-radius: .08rem;
+    box-shadow: 0.02rem 0.02rem 0.05rem #dedede;
+    float: left;
+    margin-left: 0.15rem;
+}
+
+.hot_products .food li .food_img {
+    width: 100%;
+    height: 1.91rem;
+}
+
+.hot_products .food li .food_img img {
+    width: 100%;
+    height: 100%;
+}
+
+.hot_products .food li .content {
+    width: 100%;
+    height: 1.29rem;
+    padding: 0 0.2rem;
+}
+
+.hot_products .food li .content .tit {
+    height: .23rem;
+    color: #4a4b4c;
+    font-size: .24rem;
+    font-weight: 600;
+}
+
+.hot_products .food li .content .name {
+    width: 1.17rem;
+    height: .23rem;
+    color: #868686;
+    font-size: .18rem;
+    margin-top: .04rem;
+}
+
+.hot_products .food li .content .name span {
+    font-weight: 600;
+    color: #868686;
+}
+
+.hot_products .food li .content .xiantiao {
+    width: .85rem;
+    height: .3rem;
+    background: url("../img/z_xiantiao.png") center center no-repeat;
+    background-size: 100%;
+    margin-top: .04rem;
+}
+
+.hot_products .food li .content .choice_list {
+    width: 100%;
+    height: .25rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hot_products .food li .content .choice_list .pink, .hot_products .food li .content .choice_list .blue {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hot_products .food li .content .choice_list .pink span {
+    font-size: .14rem;
+    color: #b1b1b1;
+}
+
+.hot_products .food li .content .choice_list .blue span {
+    font-size: .14rem;
+    color: #b1b1b1;
+}
+
+.hot_products .food li .content .choice_list .pink .pink_img {
+    width: .4rem;
+    height: .4rem;
+    background: url("../img/pink_img.png") no-repeat 50%/cover;
+}
+
+.hot_products .food li .content .choice_list .blue .blue_img {
+    width: .4rem;
+    height: .4rem;
+    background: url("../img/blue_img.png") no-repeat 50%/cover;
+}
+
+.recommend {
+    width: 3.45rem;
+    height: 1.5rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: .3rem;
+}
+
+.recommend .fresh {
+    width: 2.14rem;
+    height: .33rem;
+    background: url("../img/fresh.png") no-repeat 50%/cover;
+    margin: 0 auto;
+}
+
+.recommend .fresh_name {
+    width: 3.57rem;
+    height: .26rem;
+    background: url("../img/fresh_name.png") no-repeat 50%/100%;
+    margin: 0 auto;
+}
+
+.recommend .fresh_icon {
+    width: .4rem;
+    height: .4rem;
+    background: url("../img/fresh_icon.png") no-repeat 50%/100%;
+    margin: 0 auto;
+}
+.fruit_list{
+    width: 100%;
+    height: auto;
+    background: #f1f0f0;
+}
+
+.fruit_list ul {
+    width: 100%;
+    height: auto;
+    background: #f1f0f0;
+    display: none;
+}
+
+.fruit_list ul li {
+    width: 6.75rem;
+    height: 2.88rem;
+    margin: 0 auto;
+}
+
+.fruit_list ul li .or_imges {
+    width: 6rem;
+    height: 2.19rem;
+    border-radius: .5rem;
+    float: right;
+    margin-top: .1rem;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.fruit_list ul li .or_imges img {
+    width: 100%;
+    height: 100%;
+}
+
+.fruit_list ul li .or_imges .or_mask {
+    width: 100%;
+    height: .5rem;
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fruits {
+    position: relative;
+}
+
+.fruit_list ul li .or_imges .or_mask li {
+    width: 33.33%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.fruit_list ul li .or_imges .or_mask li .like {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fruit_list ul li .or_imges .or_mask li .like .likes {
+    width: .44rem;
+    height: .44rem;
+    background: url("../img/like.png") no-repeat 50%/cover;
+}
+
+.fruit_list ul li .or_imges .or_mask li .like span {
+    font-size: .22rem;
+    color: #fff;
+}
+
+.fruit_list ul li .or_imges .or_mask li .collect {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.fruit_list ul li .or_imges .or_mask li .collect .collects {
+    width: .44rem;
+    height: .44rem;
+    background: url("../img/z_collect.png") no-repeat 50%/cover;
+}
+
+.fruit_list ul li .or_imges .or_mask li .collect span {
+    font-size: .22rem;
+    color: #fff;
+}
+
+.mask {
+    width: 2.47rem;
+    height: 2.12rem;
+    border: 1px solid #fff;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: .2rem;
+    position: absolute;
+    left: .3rem;
+    top: .5rem;
+}
+
+.tab {
+    width: 2.47rem;
+    height: 2.12rem;
+    border: 1px solid #fff;
+    border-radius: .2rem;
+    background: url("../img/mask_background.png") no-repeat 50%/cover;
+    position: absolute;
+    left: 0;
+    top: .8rem;
+}
+
+.tab .wz {
+    width: 90%;
+    height: .3rem;
+    font-size: .26rem;
+    color: #fff;
+    font-weight: 600;
+    margin: 0.05rem 0.4rem;
+    letter-spacing: .2rem;
+    line-height: 1rem;
+}
+
+.tab .english {
+    font-size: .18rem;
+    color: #fff;
+    font-weight: 200;
+    width: 100%;
+    height: .3rem;
+    text-align: center;
+    margin-top: .4rem;
+}
+
+.tab .cont {
+    width: 100%;
+    height: .3rem;
+    color: #fff;
+    font-weight: 200;
+    font-size: .20rem;
+    margin-top: -0.04rem;
+    text-align: center;
+}
+
+.xing, .xingxing {
+    height: .32rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: .3rem;
+}
+
+.xing, .xingxing img {
+    width: .3rem;
+    display: block;
+    float: left;
+}
+
+.hot_products .food2 li{
+    width: 2.13rem;
+    height: 3.21rem;
+    border-radius: .2rem;
+    background: #353a45;
+    position: relative;
+    margin-top: .1rem;
+    border-radius: .2rem;
+    background: #353a45;
+}
+.imgs{
+    width: 100%;
+    height: 1.72rem;
+    position: relative;
+}
+.imgs img{
+    width: 100%;
+    height: 1.72rem;
+}
+.br{
+    width: 100%;
+    height: 1.72rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top:0;
+}
+.round{
+    width: .73rem;
+    height: .73rem;
+    border-radius: 50%;
+    background: #353a45;
+    position: absolute;
+    bottom:-.3rem;
+    left:40%;
+}
+.shangbiao{
+    width: .58rem;
+    height: .58rem;
+    position: absolute;
+    background: url("../img/all_icon.png") center center no-repeat;
+    background-size: 100%;
+    bottom:-.25rem;
+    left:42.5%;
+}
+.br1{
+    width: 100%;
+    height: 1.72rem;
+    background: url("../img/z_br.png") center center no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+}
+.price1{
+    width: 1.16rem;
+    height: .48rem;
+    position: absolute;
+    top:-0.1rem;
+    left: 26%;
+    background: url("../img/all_price.png") center center no-repeat;
+    background-size: 100%;
+    z-index: 9999999999999;
+    font-size: .26rem;
+    color:#fff;
+    text-align: center;
+    line-height: .48rem;
+}
+.title1{
+    width: 100%;
+    height: .3rem;
+    text-align: center;
+    line-height: .3rem;
+    font-size: .28rem;
+    color:#fff;
+    font-weight: 600;
+    margin-top: .02rem;
+}
+.content1{
+    width: 100%;
+    height: .3rem;
+    color:#b28849;
+    font-size: .28rem;
+    font-weight: 600;
+    text-align: center;
+}
+.xingxing1{
+    width: 1.38rem;
+    height: .2rem;
+    margin:.1rem auto;
+    display: flex;
+    justify-content: center;
+}
+.xingxing1 img{
+    width: .2rem;
+    height: .2rem;
+    background: url("../img/all_xing.png") center center no-repeat;
+    -webkit-background-size:100%;
+    background-size:100%;
+    display: block;
+    float: left;
+    margin-left: .05rem;
+}
+.mask1{
+    width:100%;
+    height: .39rem;
+    position: absolute;
+    bottom:0;
+    background:rgba(0,0,0,0.5);
+}
+.goumai1{
+    width:1.25rem;
+    height: .37rem;
+    position: absolute;
+    bottom:-.15rem;
+    background: url("../img/goumai.png") center center no-repeat;
+    background-size: 100%;
+    left:20%;
+    font-size: .24rem;
+    color:#fff;
+    text-align: center;
+    line-height: .37rem;
+    font-weight: 600;
+}
+.food.active{
+    display: block;
+}
+.food2 .item{
+    background: #353a45;
+    border-radius: .3rem;
+}
+.lists.active{
+    display: block;
+}
+
+.other-content-box{
+    position: relative;
+    height: 1.88rem;
+    width: 100%;
+    margin-bottom: 0.2rem;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 0.15rem rgba(0,0,0,.3);
+    background-color: #fff;
+}
+.hot{
+    background-size: cover;
+    position: absolute;
+    width: 0.76rem;
+    height: 0.82rem;
+    height: 0.82rem;
+    line-height:0.6rem;
+    right: 0.2rem;
+    top:-0.1rem;
+    font-size: 0.24rem;
+    color: #fff;
+    text-align: center;
+}
+
+.other-content-img{
+    width:1.4rem;
+    height:1.88rem;
+    float: left;
+    border-radius: 0.2rem;
+    overflow: hidden;
+}
+.other-content-img a{
+    display: block;
+    width:1.4rem;
+    height:1.88rem;
+}
+.other-content-img img{
+    height:100%;
+    vertical-align: middle;
+    transform: translateX(-0.9rem);
+}
+.other-content-box:first-child .other-content-img img{
+    transform: translateX(0);
+}
+.other-content-con{
+    width: 4rem;
+    float: left;
+    margin-left: 0.3rem;
+}
+.other-content-title h2,.other-content-title h3{
+    font-size: 0.26rem;
+    color: #595856;
+}
+.other-content-title{
+    border-bottom: 0.01rem dashed #a1a1a1;
+}
+.other-content-title h2 a{
+    font-size: 0.26rem;
+    color: #595856;
+}
+.other-content-title h3 a{
+    font-size: 0.24rem;
+    color: #a1a1a1;
+}
+.other-content-con p{
+    font-size: 0.24rem;
+    color: #525151;
+    margin-top: 0.05rem;
+}
+.other-content-con p a{
+    font-size: 0.24rem;
+    color: #525151;
+}
+.other-content-share{
+    margin-top: 0.03rem;
+    width: 3.6rem;
+    height: 0.26rem;
+    line-height: 0.26rem;
+    display: flex;
+    justify-content: space-between;
+}
+.other-share{
+    width: 0.78rem;
+    height:0.26rem;
+}
+.other-share-img{
+    width: 0.26rem;
+    height:0.26rem;
+    display: block;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+
+.other-share span{
+    display: block;
+    margin-left: 0.35rem;
+    font-size: 0.2rem;
+    color: #9d9d9d;
+}
+
+

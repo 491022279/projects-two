@@ -1,0 +1,159 @@
+<?php include VIEW_PATH."admin_header.html"?>
+<script src="<?php echo JS_PATH . 'fruit_intro.js'?>"></script>
+
+<style>
+    .addpic{
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        /*color: #555;*/
+        color: #A69B99;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .addpic label{
+        text-align: left;
+    }
+</style>
+<!--<body>-->
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#add" id="add_tab">增加分类</a></li>
+        <li role="presentation" class=""><a href="#list" id="list_tab">分类列表</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="add">
+            <div class="top">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">商品评论</div>
+                    <div class="panel-body">
+                        <form id='form' action="javascript:void(0)" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label for="text1">内容1</label>
+                                <input type="text" name='word1' class="form-control" id="text1"
+                                       placeholder="内容1">
+                            </div>
+                            <div class="form-group">
+                                <label for="text2">内容2</label>
+                                <input type="text" name='word2' class="form-control" id="text2"
+                                       placeholder="内容2">
+                            </div>
+                            <div class="form-group">
+                                <label for="text3">内容3</label>
+                                <input type="text" name='word3' class="form-control" id="text3"
+                                       placeholder="内容3">
+                            </div>
+                            <div class="form-group">
+                                <label for="text4">内容4</label>
+                                <input type="text" name='word4' class="form-control" id="text4"
+                                       placeholder="内容4">
+                            </div>
+                            <div class="form-group">
+                                <label for="text5">内容5</label>
+                                <input type="text" name='word5' class="form-control" id="text5"
+                                       placeholder="内容5">
+                            </div>
+                            <div class="form-group">
+                                <label for="text6">内容6</label>
+                                <input type="text" name='word6' class="form-control" id="text6"
+                                       placeholder="内容6">
+                            </div>
+                            <div class="form-group">
+                                <label for="text7">内容7</label>
+                                <input type="text" name='word7' class="form-control" id="text7"
+                                       placeholder="内容7">
+                            </div>
+                            <div class="form-group">
+                                <label for="text8">内容8</label>
+                                <input type="text" name='word8' class="form-control" id="text8"
+                                       placeholder="内容8">
+                            </div>
+                            <div class="form-group">
+                                <label for="text9">内容9</label>
+                                <input type="text" name='word9' class="form-control" id="text9"
+                                       placeholder="内容9">
+                            </div>
+                            <div class="form-group">
+                                <label for="text10">内容10</label>
+                                <input type="text" name='word10' class="form-control" id="text10"
+                                       placeholder="内容10">
+                            </div>
+
+                            <!--<div class="form-group" style="display: block">-->
+                            <!--<div class="radio" style="margin:0">-->
+                            <!--<label>-->
+                            <!--<input type="radio" name='cid' id="optionsRadios1" value="0" checked>-->
+                            <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios1" value="0" checked>&ndash;&gt;-->
+                            <!--酒水-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--<div class="radio" style="margin:0">-->
+                            <!--<label>-->
+                            <!--<input type="radio" name='cid' id="optionsRadios2" value="2">-->
+                            <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios2" value="2">&ndash;&gt;-->
+                            <!--零食-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-default">添加</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list">
+            <div class="content">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">数据信息</div>
+                    <div class="panel-body">
+                        <div class="bs-example" data-example-id="bordered-table">
+                            <table class="table table-bordered" style="text-align: center">
+                                <thead>
+                                <tr>
+                                    <th style="text-align: center">id</th>
+                                    <th style="text-align: center">内容1</th>
+                                    <th style="text-align: center">内容2</th>
+                                    <th style="text-align: center">内容3</th>
+                                    <th style="text-align: center">内容4</th>
+                                    <th style="text-align: center">内容5</th>
+                                    <th style="text-align: center">内容6</th>
+                                    <th style="text-align: center">内容7</th>
+                                    <th style="text-align: center">内容8</th>
+                                    <th style="text-align: center">内容9</th>
+                                    <th style="text-align: center">内容10</th>
+                                    <th style="text-align: center">
+                                        <nobr>删除</nobr>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

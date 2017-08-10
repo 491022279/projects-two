@@ -1,0 +1,187 @@
+<?php include VIEW_PATH."headercommon.html"?>
+<link rel="stylesheet" href="<?php echo CSS_PATH?>details.css">
+<script src="<?php echo JS_PATH?>details.js"></script>
+<header>
+    <div class="top left" ><a href='/SGC/index.php/main' style="width:100%;height: 100%;"></a></div>
+    <div class="top mid">
+        <span>商品详情</span>
+        <p>SHANG PIN XIANG QING</p>
+        <div class="dow"></div>
+    </div>
+    <div class="top right"><a href="/SGC/index.php/Personal" style="width:100%;height: 100%;display: block"></a></div>
+</header>
+<section data="<?php echo json_encode($fruit_details);?>" id="detail">
+<div class="sh-zhanshi">
+    <div class="neikuan">
+        <div class="shangpui-anli">
+            <div class="sh-imgs">
+                <div class="shangpin-img" style="background-image: url('<?php echo $fruit_details['pic1']?>')"></div>
+                <div class="shangpin-img" style="background-image: url('<?php echo $fruit_details['pic2']?>')"></div>
+            </div>
+            <h1><a href="#"><?php echo $fruit_details['title']?></a></h1>
+            <h1><a href="#"><?php echo $fruit_details['etitle']?></a></h1>
+            <div class="sh_xian" style="background-image: url('<?php echo IMG_PATH?>sh_xian.png')"></div>
+            <div class="sh_xing-box">
+                <div class="sh_xing" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                <div class="sh_xing" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                <div class="sh_xing" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                <div class="sh_xing" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                <div class="sh_xing" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+            </div>
+            <div class="count">
+                <div class="jia add" style="background-image: url('<?php echo IMG_PATH?>sh_jiahao.png')"></div>
+                <input type="text" class="num" value="<?php echo $fruit_details['jin']?>g">
+                <div class="jian reduce" style="background-image: url('<?php echo IMG_PATH?>sh_jian.png')"></div>
+            </div>
+            <p class="price-p"><?php echo $fruit_details['price']?></p>
+    </div>
+        <a href="/SGC/index.php/order"><div class="sh-buy" style="background-image: url('<?php echo IMG_PATH?>sh_kkkk2.png')">立即购买</div></a>
+        <div class="shangpin-k"></div>
+    </div>
+</div>
+    <div class="neikuan">
+        <div class="sh-xuxian" style="background-image: url('<?php echo IMG_PATH?>sh_xuxian.png')"></div>
+        <ul class="sh-miaoshu">
+            <li><?php echo $fruit_details['word1']?></li>
+            <li><?php echo $fruit_details['word2']?></li>
+            <li><?php echo $fruit_details['word3']?></li>
+        </ul>
+    </div>
+    <div class="sh-intro neikuan">
+        <div class="sh-intro-title">
+            <div class="sh-intro-title1">
+                <span class="sh-line"></span>
+                <h3>MEIRITUIJIANJING</h3>
+                <span class="sh-line"></span>
+                <span>TUIJIANMEIRI</span>
+                <span></span>
+            </div>
+            <p class="sh-intro-title2">商品介绍</p>
+        </div>
+        <div class="sh-intro-content">
+            <div class="sh-content-title">
+                <h3>商品参数</h3>
+                <p><span>SHANGPIN</span> CANSHU</p>
+            </div>
+            <ul class="sh-content">
+                <li>
+                    <p></p>
+                    <p>商品名称</p>
+                    <p><?php echo $fruit_details['title']?></p>
+                </li>
+                <li>
+                    <p></p>
+
+                    <p>包装方式</p>
+
+                    <p>散装</p>
+                </li>
+                <li>
+                    <p></p>
+
+                    <p>商品产地</p>
+
+                    <p><?php echo $fruit_details['place']?></p>
+                </li>
+                <li>
+                    <p></p>
+
+                    <p>净含量</p>
+
+                    <p>1000g</p>
+                </li>
+                <li>
+                    <p></p>
+
+                    <p>保质期</p>
+
+                    <p><?php echo $fruit_details['date']?></p>
+                </li>
+                <li>
+                    <p></p>
+
+                    <p>商品品牌</p>
+
+                    <p>送青来</p>
+                </li>
+            </ul>
+            <div class="sh-content-title">
+                <h3>商品细节图</h3>
+                <p><span>SHANGPIN</span> XIJIETU</p>
+            </div>
+            <div class="sh-content-pic">
+                <div class="sh-pic-left">
+                    <div class="sh-pic1" style="background:url('<?php echo $fruit_details['pic2']?>') no-repeat center/cover"></div>
+                    <div class="sh-pic3">
+                        <p>
+                            <?php echo $fruit_details['word4']?>
+                            <br>
+                            <?php echo $fruit_details['word5']?>
+                            <br>
+                            <?php echo $fruit_details['word6']?>
+                            <br>
+                            <?php echo $fruit_details['word7']?>
+                        </p>
+                        <div class="sh-pics" style="background:url('<?php echo IMG_PATH?>sh_shpin3.png');background-size: 100%;"></div>
+                    </div>
+                </div>
+                <div class="sh-pic-right">
+                    <div class="sh-pic2" style="background:url('<?php echo $fruit_details['pic3']?>') no-repeat center/cover"></div>
+                    <div class="sh-pic4">
+                        <div class="sh-pic4-left">
+                            <p><?php echo $fruit_details['word8']?></p>
+
+                            <p><?php echo $fruit_details['word9']?></p>
+                        </div>
+                        <div class="sh-pic4-right" style="background:url('<?php echo $fruit_details['pic5']?>') no-repeat center/cover"></div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="other-search">
+        <div class="neikuan">
+            <div class="sh-intro-title">
+                <div class="sh-intro-title1">
+                    <span class="sh-line"></span>
+                    <h3>MEIRITUIJIANJING</h3>
+                    <span class="sh-line"></span>
+                    <span>TUIJIANMEIRI</span>
+                    <span></span>
+                </div>
+                <p class="sh-intro-title2">用户评价</p>
+            </div>
+
+            <div class="other-content">
+                <?php foreach($fruit_comment as $k=>$v):?>
+                <div class="other-content-box">
+                    <div align="center" class="other-content-img">
+                        <a href="#">
+                            <img src="<?php echo $v['cpic']?>" alt="">
+                        </a>
+                        <div class="sh_xing-box1">
+                            <div class="sh_xing1" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                            <div class="sh_xing1" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                            <div class="sh_xing1" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                            <div class="sh_xing1" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                            <div class="sh_xing1" style="background-image: url('<?php echo IMG_PATH?>sh_xing.png')"></div>
+                        </div>
+                    </div>
+                    <div class="other-content-con">
+
+                        <div class="other-content-title">
+                            <h2> <a href="#"><?php echo $v['title']?></a></h2>
+                            <h3><a href="#"><?php echo $v['etitle']?></a></h3>
+                        </div>
+                        <p><a href="#"><?php echo $v['content']?></a></p>
+                    </div>
+                    <div class="hot" style="background-image: url('<?php echo IMG_PATH?>hot.png')">最新</div>
+                </div>
+                <?php endforeach;?>
+            </div>
+        </div>
+    </div>
+</section>

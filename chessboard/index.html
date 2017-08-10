@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>棋盘</title>
+</head>
+<style>
+    *{
+        list-style:none;
+        margin:0;
+        padding:0;
+    }
+    canvas{
+        width:600px;
+        height:600px;
+        margin:0 auto;
+        border:1px solid #bd2c00;
+        position: absolute;
+        left:0;
+        top:0;
+        right:0;
+        bottom:0;
+    }
+    .box{
+        width:600px;
+        height:600px;
+        background:#fff;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        margin:auto;
+        z-index: 10;
+        box-shadow:0 0 0 900px rgba(0,0,0,.8);
+        transform: scale(0,0);
+        transition: all 1s ease;
+    }
+    button{
+        border:none;
+        background:#ff4400;
+        position: absolute;
+        top:10px;
+        left:10px;
+        z-index: 10;
+        color:#fff;
+    }
+    .active{
+        transform: scale(1,1);
+    }
+    a{
+        display:block;
+        width:600px;
+        height:600px;
+        position: absolute;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        z-index: 100;
+        margin:auto;
+    }
+</style>
+<body>
+    <canvas width="600" height="600"></canvas>
+    <button>查看棋谱</button>
+    <div class="box"></div>
+</body>
+</html>
+<script>
+    let canvas=document.querySelector('canvas');
+    let ctx=canvas.getContext('2d');
+    let box=document.querySelector('.box');
+    let btn=document.querySelector('button');
+    let flag=true,flag1=true;
+    let drops={};
+    //画线
+    drawLine();
+    //下棋
+    canvas.onclick=function(e){
+        //点击位置
+        let ox= Math.floor(e.offsetX/40),oy= Math.floor(e.offsetY/40);
+        //旗子切换颜色
+        if(drops[m(ox,oy)]){
+            return;
+        }
+        if(flag){
+            //黑
+            if(check(ox,oy,'#000000')==5){
+                alert('黑方胜')
+            }
+            drawChress(ox,oy,'#000000');
+        }else{
+            //白
+            if(check(ox,oy,'#BD2C00')==5){
+                alert('白方胜')
+            }
+            drawChress(ox,oy,'#BD2C00');
+        }
+
+    }
+    btn.onclick=function(){
+        box.classList.toggle('active');
+        if(flag1){
+            btn.innerText='关闭棋谱';
+            flag1=!flag1;
+        }else{
+            btn.innerText='查看棋谱';
+            flag1=!flag1;
+        }
+        let imgdata=canvas.toDataURL('image/png');
+        let img=new Image;
+        img.src=imgdata;
+        img.onload=function(){
+            for(let i=0;i<box.childNodes.length;i++){
+                box.removeChild(box.firstChild);
+                box.removeChild(box.lastChild);
+            }
+            box.appendChild(img);
+            console.log(img)
+            let a=document.createElement('a');
+            a.href=imgdata;
+            a.download='qipan.png';
+            box.appendChild(a);
+        }
+    }
+    function drawLine(){
+//        清空 保存 画线 恢复
+        ctx.clearRect(0,0,600,600);
+        ctx.save();
+        ctx.beginPath();
+        for(let i=0;i<15;i++){
+            ctx.moveTo(line(0),line(i));
+            ctx.lineTo(line(14),line(i));
+            ctx.moveTo(line(i),line(0));
+            ctx.lineTo(line(i),line(14));
+        }
+        ctx.closePath();
+        ctx.stroke();
+        circle(line(7),line(7));
+        circle(line(3),line(3));
+        circle(line(11),line(11));
+        circle(line(3),line(11));
+        circle(line(11),line(3));
+        ctx.restore();
+    }
+    function line(x){
+        return 40*x+20;
+    }
+    function circle(x,y){
+        ctx.save();
+        ctx.translate(x,y);
+        ctx.arc(0,0,5,0,Math.PI*2);
+        ctx.closePath();
+        ctx.fill();
+        ctx.restore();
+    }
+    function drawChress(x,y,color){
+        ctx.save();
+        ctx.translate(line(x),line(y));
+        ctx.beginPath();
+        ctx.arc(0,0,20,0,Math.PI*2);
+        ctx.fillStyle=color;
+        ctx.fill();
+        ctx.closePath();
+        ctx.restore();
+        flag=!flag;
+        drops[m(x,y)]=color;
+    }
+    function m(x,y){
+        return `${x}_${y}`;
+    }
+    function check(x,y,color){
+        //x,y,color
+        let row=1;
+        let i=1;
+        while(drops[m(x+i,y)]==color){
+            row++;
+            i++;
+        }
+        i=1;
+        while(drops[m(x-i,y)]==color){
+            row++;
+            i++;
+        }
+        let cols=1;
+        i=1;
+        while(drops[m(x,y+i)]==color){
+            cols++;
+            i++;
+        }
+        i=1;
+        while(drops[m(x,y-i)]==color){
+            cols++;
+            i++;
+        }
+        let zx=1;
+        i=1;
+        while(drops[m(x+i,y+i)]==color){
+            zx++;
+            i++;
+        }
+        i=1;
+        while(drops[m(x-i,y-i)]==color){
+            zx++;
+            i++;
+        }
+        let yx=1;
+        i=1;
+        while(drops[m(x-i,y+i)]==color){
+            yx++;
+            i++;
+        }
+        i=1;
+        while(drops[m(x+i,y-i)]==color){
+            yx++;
+            i++;
+        }
+        return Math.max(row,cols,zx,yx);
+    }
+</script>

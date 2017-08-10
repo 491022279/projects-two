@@ -1,0 +1,257 @@
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper {
+  background-color: #EFEFEF; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: scroll; }
+
+#topbar {
+  width: 100%;
+  height: 2.7rem;
+  background: #F03945; }
+  #topbar .bacheader {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #F03945; }
+    #topbar .bacheader .hleft {
+      width: 0.53rem;
+      height: 0.53rem;
+      background-image: url("/SGC/Public/img/001.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+    #topbar .bacheader .hmid {
+      width: 1.7rem;
+      font-size: 0.3rem;
+      color: #FFFFFF;
+      text-align: center; }
+    #topbar .bacheader .hmid .en {
+      font-size: 0.2rem; }
+    #topbar .bacheader .hmid .decorate {
+      width: 0.5rem;
+      height: 0.04rem;
+      background-image: url("/SGC/Public/img/orderline_03.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: 0 auto; }
+    #topbar .bacheader .hright {
+      width: 0.53rem;
+      height: 0.53rem;
+      background-image: url("/SGC/Public/img/003.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+.main {
+  background: #EFEFEF; }
+  .main .items {
+    width: 6.22rem;
+    height: auto;
+    padding: 0.8rem 0.55rem;
+    background: #FFFFFF;
+    border-radius: 0.1rem;
+    transform: translateY(-1.14rem);
+    margin: auto; }
+    .main .items .item {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      width: 100%;
+      height: 0.92rem;
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.4rem; }
+      .main .items .item > div {
+        flex: none;
+        font-size: 0.2rem;
+        color: #535252; }
+      .main .items .item .imgs {
+        width: 0.83rem;
+        height: 0.83rem; }
+      .main .items .item .imgs img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+      .main .items .item .title > p {
+        font-weight: 600;
+        font-size: 0.24rem;
+        border-bottom: 1px solid #DCDCDC;
+        margin-bottom: 0.1rem; }
+      .main .items .item .title .info span:nth-child(1) {
+        display: inline-block;
+        width: 0.48rem;
+        height: 0.25rem;
+        border-radius: 0.2rem;
+        background: #C6C6C6;
+        color: #FFFFFF;
+        font-weight: 600;
+        font-size: 0.2rem;
+        text-align: center; }
+      .main .items .item .title .info span:nth-child(2) {
+        color: #636363;
+        font-weight: 600;
+        font-size: 0.2rem;
+        text-align: center; }
+      .main .items .item .level .starbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: nowrap; }
+        .main .items .item .level .starbox .star {
+          width: 0.2rem;
+          height: 0.2rem;
+          background-image: url("/SGC/Public/img/order_09.png");
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat; }
+      .main .items .item .price p {
+        color: #D11B28;
+        font-weight: 600;
+        font-size: 0.24rem; }
+  .main .payMoney {
+    width: 100%;
+    height: 0.88rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-bottom: 0.2rem; }
+    .main .payMoney div {
+      flex: none; }
+    .main .payMoney .logo {
+      width: 0.6rem;
+      height: 0.6rem;
+      background-image: url("/SGC/Public/img/orderinfo_20.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 0.1rem; }
+    .main .payMoney .tips {
+      height: 100%; }
+    .main .payMoney .tips p:nth-child(1) {
+      font-size: 0.3rem;
+      color: #444242;
+      font-weight: 600;
+      line-height: 0.3rem; }
+    .main .payMoney .tips p:nth-child(2) {
+      font-size: 0.3rem;
+      color: #777676; }
+  .main .allprice {
+    width: 6.22rem;
+    height: 1.4rem;
+    background: #FFC21C;
+    color: #D11B28;
+    font-weight: 600;
+    font-size: 0.48rem;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 1.4rem;
+    margin-bottom: 0.2rem; }
+
+.select {
+  width: 100%;
+  padding: 0.4rem 0.64rem;
+  background: #FFFFFF;
+  margin-top: 0.4rem;
+  height: auto; }
+  .select .option {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.4rem;
+    border-bottom: 1px solid #E6E6E6;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start; }
+    .select .option .oleft {
+      width: 0.34rem;
+      height: 0.34rem;
+      background-image: url("/SGC/Public/img/orderinfo_24.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 0.3rem; }
+    .select .option .omid {
+      width: calc(100% - 0.34rem);
+      display: flex;
+      justify-content: space-around;
+      padding-bottom: 0.4rem; }
+      .select .option .omid div {
+        flex: 1; }
+    .select .option .omid p:nth-child(1) {
+      font-size: 0.3rem;
+      color: #4E4D4D;
+      font-weight: 600; }
+    .select .option .omid p:nth-child(2) {
+      font-size: 0.2rem;
+      color: #959595;
+      font-weight: 600; }
+    .select .option .omid p:nth-child(3) {
+      font-size: 0.3rem;
+      color: #D11B28;
+      font-weight: 600; }
+    .select .option .omid .content > div {
+      margin-top: 0.4rem;
+      color: #B3B3B3;
+      font-size: 0.24rem; }
+    .select .option .omid .oright p {
+      color: #FFFFFF;
+      width: 1.2rem;
+      height: 0.4rem;
+      border-radius: 0.4rem;
+      background: #D11B28;
+      text-align: center;
+      font-weight: 400;
+      float: right; }
+
+.submit {
+  width: 4.04rem;
+  height: 0.9rem;
+  border-radius: 0.9rem;
+  background: #FFCC00;
+  margin: 0 auto;
+  margin-top: 0.6rem;
+  position: relative;
+  color: #FFFFFF;
+  font-size: 0.36rem;
+  font-weight: 600; }
+  .submit a {
+    color: #FFFFFF; }
+  .submit div {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 0.1rem;
+    height: 0.1rem;
+    border-radius: 50%;
+    background: #FFFFFF; }
+  .submit .pointL {
+    left: 0.2rem; }
+  .submit .pointR {
+    right: 0.2rem; }
+  .submit p {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 0.9rem; }
+
+.boot {
+  width: 100%;
+  height: 1rem; }

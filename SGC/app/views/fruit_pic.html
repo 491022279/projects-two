@@ -1,0 +1,139 @@
+<?php include VIEW_PATH."admin_header.html"?>
+<script src="<?php echo JS_PATH . 'fruit_pic.js'?>"></script>
+
+<style>
+    .addpic{
+        display: block;
+        width: 100%;
+        height: 34px;
+        padding: 6px 12px;
+        font-size: 14px;
+        line-height: 1.42857143;
+        /*color: #555;*/
+        color: #A69B99;
+        background-color: #fff;
+        background-image: none;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+        -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+        transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+    }
+    .addpic label{
+        text-align: left;
+    }
+</style>
+<!--<body>-->
+<div class="container">
+
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active">
+            <a href="#add" id="add_tab">增加分类</a></li>
+        <li role="presentation" class=""><a href="#list" id="list_tab">分类列表</a></li>
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="add">
+            <div class="top">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">商品收藏</div>
+                    <div class="panel-body">
+                        <form id='form' action="javascript:void(0)" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label class="">图片1</label>
+                                <div class="addpic" style="">
+                                    <label for="file1" style="padding-top: 1px;" id="label1">点击上传图片</label>
+                                    <input type="file" style="display: none;" name="pic1" class="form-control" id="file1" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片2</label>
+                                <div class="addpic" style="">
+                                    <label for="file2" style="padding-top: 1px;" id="label2">点击上传图片</label>
+                                    <input type="file" style="display: none;" name="pic2" class="form-control" id="file2" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片3</label>
+                                <div class="addpic" style="">
+                                    <label for="file3" style="padding-top: 1px;" id="label3">点击上传图片</label>
+                                    <input type="file" style="display: none;" name="pic3" class="form-control" id="file3" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片4</label>
+                                <div class="addpic" style="">
+                                    <label for="file4" style="padding-top: 1px;" id="label4">点击上传图片</label>
+                                    <input type="file" style="display: none;" name="pic4" class="form-control" id="file4" placeholder="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="">图片5</label>
+                                <div class="addpic" style="">
+                                    <label for="file5" style="padding-top: 1px;" id="label5">点击上传图片</label>
+                                    <input type="file" style="display: none;" name="pic5" class="form-control" id="file5" placeholder="">
+                                </div>
+                            </div>
+                            <!--<div class="form-group" style="display: block">-->
+                            <!--<div class="radio" style="margin:0">-->
+                            <!--<label>-->
+                            <!--<input type="radio" name='cid' id="optionsRadios1" value="0" checked>-->
+                            <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios1" value="0" checked>&ndash;&gt;-->
+                            <!--酒水-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--<div class="radio" style="margin:0">-->
+                            <!--<label>-->
+                            <!--<input type="radio" name='cid' id="optionsRadios2" value="2">-->
+                            <!--&lt;!&ndash;<input type="radio" name='type' id="optionsRadios2" value="2">&ndash;&gt;-->
+                            <!--零食-->
+                            <!--</label>-->
+                            <!--</div>-->
+                            <!--</div>-->
+                            <button type="submit" class="btn btn-default">添加</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="list">
+            <div class="content">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">数据信息</div>
+                    <div class="panel-body">
+                        <div class="bs-example" data-example-id="bordered-table">
+                            <table class="table table-bordered" style="text-align: center">
+                                <thead>
+                                <tr>
+                                    <th style="text-align: center">id</th>
+                                    <th style="text-align: center">图片1</th>
+                                    <th style="text-align: center">图片2</th>
+                                    <th style="text-align: center">图片3</th>
+                                    <th style="text-align: center">图片4</th>
+                                    <th style="text-align: center">图片5</th>
+
+                                    <th style="text-align: center">
+                                        <nobr>删除</nobr>
+                                    </th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+</body>
+</html>

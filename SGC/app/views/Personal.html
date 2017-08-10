@@ -1,0 +1,66 @@
+<?php include VIEW_PATH.'headercommon.html'?>
+<link rel="stylesheet" href="<?php echo CSS_PATH.'Personal.css'?>">
+<header>
+    <div class="top left"><a href="" style="width:100%;height: 100%;display: none"></a></div>
+    <div class="top mid">
+        <span>商品分类</span>
+
+        <p>SHANG PIN FEN LEI</p>
+
+        <div class="dow"></div>
+    </div>
+    <div class="top right"><a href="" style="width:100%;height: 100%;display: block"></a></div>
+</header>
+
+<input type="hidden" value="<?php echo $id ?>" id="hidden">
+
+<section class="center-section">
+    <div class="portrait">
+        <a  href="##" class="lcon1"></a>
+        <a  href="##" class="lcon2"></a>
+        <div class="portrait_logo">
+            <a href="##">
+                <img src="<?php echo IMG_PATH . 'a2af7dec-88ff-4a17-b529-03e819c281fc.png' ?>" alt="">
+            </a>
+        </div>
+        <div class="portrait_content">
+            <h3>AIWUHUANGDE</h3>
+            <h4>爱吾皇的五花肉</h4>
+            <div class="stars">
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+                <i class="star"></i>
+            </div>
+            <p>空有一颗想减肥的心，偏偏生了一条吃货的命</p>
+        </div>
+    </div>
+    <div class="option">
+        <ul>
+            <li>
+                <img src="<?php echo IMG_PATH . 'Path1.png' ?>" alt="">
+                <p>我的购物车 <span>·</span> </p>
+                <a href="/SGC/index.php/Shopping"></a>
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH . 'Path2.png' ?>" alt="">
+                <p>地址管理 <span>·</span> </p>
+                <a href="##"></a>
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH . 'Path3.png' ?>" alt="">
+                <p>我的钱包 <span>·</span> </p>
+                <a href="/SGC/index.php/order/wallet" class="wallet">0</a>
+            </li>
+            <li>
+                <img src="<?php echo IMG_PATH . 'Path4.png' ?>" alt="">
+                <p>我的收藏 <span>·</span> </p>
+                <a href="/SGC/index.php/Collection"></a>
+            </li>
+        </ul>
+    </div>
+</section>
+<?php include VIEW_PATH.'footer.html';?>
+</body>
+</html>
